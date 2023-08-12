@@ -1,94 +1,91 @@
-import socket #so we can have two way communication across a network
-import struct #for making and changing data structures as python tuples
-import textwrap #for formatting text
-import platform
+from scapy.layers.inet import IP, TCP, UDP, ICMP
+from scapy.layers.inet6 import IPv6
+from scapy.layers.l2 import Ether, ARP
+from scapy.all import sniff
+import logging
+from logging.handlers import RotatingFileHandler
+
+def configure_logging():
+    log_formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
+    
+    # Create a handler that writes log messages to a file, with a maximum log file size of 1 MB, keeping 3 old log files.
+    log_handler = RotatingFileHandler('sniffer.log', maxBytes=1e6, backupCount=3)
+    log_handler.setFormatter(log_formatter)
+    
+    # Adding the handler to the root logger
+    logging.getLogger().addHandler(log_handler)
+    logging.getLogger().setLevel(logging.INFO)
+
+
+def log_ethernet_frame(packet):
+    try:
+        eth_frame = packet[Ether]
+        logging.info(f'Ethernet Frame: Destination: {eth_frame.dst}, Source: {eth_frame.src}, Protocol: {eth_frame.type}')
+    except Exception as e:
+        logging.error(f'Error processing Ethernet frame: {e}. Packet details: {packet.summary()}')
+
+def log_ipv4_packet(packet):
+    try:
+        ipv4_packet = packet[IP]
+        logging.info(f'IPv4 Packet: Version: {ipv4_packet.version}, Header Length: {ipv4_packet.ihl}, TTL: {ipv4_packet.ttl}, Protocol: {ipv4_packet.proto}, Source: {ipv4_packet.src}, Target: {ipv4_packet.dst}')
+    except Exception as e:
+        logging.error(f'Error processing IPv4 packet: {e}. Packet details: {packet.summary()}')
+
+def log_ipv6_packet(packet):
+    try:
+        ipv6_packet = packet[IPv6]
+        logging.info(f'IPv6 Packet: Version: {ipv6_packet.version}, Traffic Class: {ipv6_packet.tc}, Flow Label: {ipv6_packet.fl}, Payload Length: {ipv6_packet.plen}, Next Header: {ipv6_packet.nh}, Hop Limit: {ipv6_packet.hlim}, Source: {ipv6_packet.src}, Target: {ipv6_packet.dst}')
+    except Exception as e:
+        logging.error(f'Error processing IPv6 packet: {e}. Packet details: {packet.summary()}')
+    
+def log_udp_segment(packet):
+    try:
+        udp_segment = packet[UDP]
+        logging.info(f'UDP Segment: Source Port: {udp_segment.sport}, Destination Port: {udp_segment.dport}')
+    except Exception as e:
+        logging.error(f'Error processing UDP segment: {e}. Packet details: {packet.summary()}')
+
+def log_tcp_segment(packet):
+    try:
+        tcp_segment = packet[TCP]
+        logging.info(f'TCP Segment: Source Port: {tcp_segment.sport}, Destination Port: {tcp_segment.dport}')
+    except Exception as e:
+        logging.error(f'Error processing TCP segment: {e}. Packet details: {packet.summary()}')
+
+def log_icmp_packet(packet):
+    try:
+        icmp_segment = packet[ICMP]
+        logging.info(f'ICMP Segment: Source Port: {icmp_segment.sport}, Destination Port: {icmp_segment.dport}')
+    except Exception as e:
+        logging.error(f'Error processing ICMP segment: {e}. Packet details: {packet.summary()}')
+def log_arp_packet(packet):
+    try:
+        arp_packet = packet[ARP]
+        logging.info(f'ARP Packet: Hardware Type: {arp_packet.hwtype}, Protocol Type: {arp_packet.ptype}, Operation: {arp_packet.op}, Sender MAC: {arp_packet.hwsrc}, Sender IP: {arp_packet.psrc}, Target MAC: {arp_packet.hwdst}, Target IP: {arp_packet.pdst}')
+    except Exception as e:
+        logging.error(f'Error processing ARP packet: {e}. Packet details: {packet.summary()}')
+    
+def process_packet(packet):
+    log_ethernet_frame(packet)
+    if packet.haslayer(IP):
+        log_ipv4_packet(packet)
+    if packet.haslayer(UDP):
+        log_udp_segment(packet)
+    if packet.haslayer(TCP):
+        log_tcp_segment(packet)
+    if packet.haslayer(ARP):
+        log_arp_packet(packet)
+    if packet.haslayer(IPv6):
+        log_ipv6_packet(packet)
+
+    
+
 
 def main():
-    # Create a raw socket to listen for all Ethernet protocols (requires admin access)
-    try:
-        # Determine the platform and create the appropriate socket
-        if platform.system() == 'Linux':
-            conn = socket.socket(socket.AF_PACKET, socket.SOCK_RAW, socket.ntohs(3)) #create raw socket listening for all protocols
-        elif platform.system() == 'Windows':
-            conn = socket.socket(socket.AF_INET, socket.SOCK_RAW, socket.IPPROTO_IP)
-            conn.bind((socket.gethostbyname(socket.gethostname()), 0))
-            conn.ioctl(socket.SIO_RCVALL, socket.RCVALL_ON)
-        else:
-            print("This platform is not supported.")
-            return
-    except PermissionError:
-        print("Admin access is required to run this program.")
-        return
-    except Exception as e:
-        print(f"An error occurred while creating the socket: {e}")
-        return
-
-    # Continuously receive and process packets
-    while True:
-        try:
-            # Receive raw data and unpack the Ethernet frame
-            raw_data, addr = conn.recvfrom(65536)
-            dest_mac, src_mac, eth_proto, data = ethernet_frame(raw_data)
-            print('\nEthernet Frame:')
-            print('Destination: {}, Source: {}, Protocol: {}'.format(dest_mac, src_mac, eth_proto))
-
-            # Process IPv4 packets
-            if eth_proto == 8:
-                try:
-                    (version, header_length, ttl, proto, src, target, data) = ipv4_packet(data)
-                    print('IPv4 Packet:')
-                    print('Version: {}, Header Length: {}, TTL: {}'.format(version, header_length, ttl))
-                    print('Protocol: {}, Source: {}, Target: {}'.format(proto, src, target))
-
-                    # Process TCP segments
-                    if proto == 6:
-                        try:
-                            src_port, dest_port, sequence, acknowledgment, flag_urg, flag_ack, flag_psh, flag_rst, flag_syn, flag_fin, data = tcp_segment(data)
-                            print('TCP Segment:')
-                            print('Source Port: {}, Destination Port: {}'.format(src_port, dest_port))
-                            print('Sequence: {}, Acknowledgment: {}'.format(sequence, acknowledgment))
-                            print('Flags:')
-                            print('URG: {}, ACK: {}, PSH: {}, RST: {}, SYN: {}, FIN:{}'.format(flag_urg, flag_ack, flag_psh, flag_rst, flag_syn, flag_fin))
-                        except Exception as e:
-                            print(f"An error occurred while processing the TCP segment: {e}")
-                except Exception as e:
-                    print(f"An error occurred while processing the IPv4 packet: {e}")
-        except Exception as e:
-            print(f"An error occurred while processing the Ethernet frame: {e}")
-
-# Unpack Ethernet frame and return source and destination MAC addresses, protocol, and payload
-def ethernet_frame(data):
-    dest_mac, src_mac, proto = struct.unpack('! 6s 6s H', data[:14])
-    return get_mac_addr(dest_mac), get_mac_addr(src_mac), socket.htons(proto), data[14:]
-
-# Convert bytes to  MAC address format
-def get_mac_addr(bytes_addr):
-    bytes_str = map('{:02x}'.format, bytes_addr)
-    return ':'.join(bytes_str).upper()
-
-# Unpack IPv4 packet and return version, header length, TTL, protocol, source and target IPs, and payload
-def ipv4_packet(data):
-    version_header_length = data[0]
-    version = version_header_length >> 4
-    header_length = (version_header_length & 15) * 4
-    ttl, proto, src, target = struct.unpack('! 8x B B 2x 4s 4s', data[:20])
-    return version, header_length, ttl, proto, ipv4(src), ipv4(target), data[header_length:]
-
-# Unpack TCP segment and return source and destination ports, sequence, acknowledgment, flags, and payload
-def tcp_segment(data):
-    (src_port, dest_port, sequence, acknowledgment, offset_reserved_flags) = struct.unpack('! H H L L H', data[:14])
-    offset = (offset_reserved_flags >> 12) * 4
-    flag_urg = (offset_reserved_flags & 32) >> 5
-    flag_ack = (offset_reserved_flags & 16) >> 4
-    flag_psh = (offset_reserved_flags & 8) >> 3
-    flag_rst = (offset_reserved_flags & 4) >> 2
-    flag_syn = (offset_reserved_flags & 2) >> 1
-    flag_fin = offset_reserved_flags & 1
-    return src_port, dest_port, sequence, acknowledgment, flag_urg, flag_ack, flag_psh, flag_rst, flag_syn, flag_fin, data[offset:]
-
-# Convert IPv4 address bytes to standard readable format
-def ipv4(addr):
-    return '.'.join(map(str, addr))
+    configure_logging()
+    logging.basicConfig(filename='sniffer.log', level=logging.INFO)
+    logging.info('Packet Sniffer started.')
+    sniff(prn=process_packet)
 
 if __name__ == '__main__':
     main()

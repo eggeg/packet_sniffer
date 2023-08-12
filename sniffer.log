@@ -1,0 +1,53 @@
+2023-08-12 12:52:17,185 - INFO - Packet Sniffer started.
+2023-08-12 12:52:17,816 - INFO - Ethernet Frame: Destination: fc:12:63:aa:4c:db, Source: 40:1c:83:fd:1a:5b, Protocol: 2048
+2023-08-12 12:52:17,816 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 128, Protocol: 17, Source: 192.168.0.93, Target: 128.193.10.75
+2023-08-12 12:52:17,816 - INFO - UDP Segment: Source Port: 52465, Destination Port: 443
+2023-08-12 12:52:19,188 - INFO - Ethernet Frame: Destination: fc:12:63:aa:4c:db, Source: 40:1c:83:fd:1a:5b, Protocol: 2048
+2023-08-12 12:52:19,188 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 128, Protocol: 6, Source: 192.168.0.93, Target: 128.193.10.75
+2023-08-12 12:52:19,188 - INFO - TCP Segment: Source Port: 58633, Destination Port: 443
+2023-08-12 12:52:19,285 - INFO - Ethernet Frame: Destination: 40:1c:83:fd:1a:5b, Source: fc:12:63:aa:4c:db, Protocol: 2048
+2023-08-12 12:52:19,285 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 238, Protocol: 6, Source: 128.193.10.75, Target: 192.168.0.93
+2023-08-12 12:52:19,285 - INFO - TCP Segment: Source Port: 443, Destination Port: 58633
+2023-08-12 12:52:19,340 - INFO - Ethernet Frame: Destination: 40:1c:83:fd:1a:5b, Source: fc:12:63:aa:4c:db, Protocol: 2048
+2023-08-12 12:52:19,340 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 238, Protocol: 6, Source: 128.193.10.75, Target: 192.168.0.93
+2023-08-12 12:52:19,340 - INFO - TCP Segment: Source Port: 443, Destination Port: 58633
+2023-08-12 12:52:19,340 - INFO - Ethernet Frame: Destination: fc:12:63:aa:4c:db, Source: 40:1c:83:fd:1a:5b, Protocol: 2048
+2023-08-12 12:52:19,340 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 128, Protocol: 6, Source: 192.168.0.93, Target: 128.193.10.75
+2023-08-12 12:52:19,340 - INFO - TCP Segment: Source Port: 58633, Destination Port: 443
+2023-08-12 12:52:20,110 - INFO - Ethernet Frame: Destination: fc:12:63:aa:4c:db, Source: 40:1c:83:fd:1a:5b, Protocol: 2048
+2023-08-12 12:52:20,110 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 128, Protocol: 17, Source: 192.168.0.93, Target: 128.193.10.75
+2023-08-12 12:52:20,110 - INFO - UDP Segment: Source Port: 52465, Destination Port: 443
+2023-08-12 12:52:20,195 - INFO - Ethernet Frame: Destination: 40:1c:83:fd:1a:5b, Source: fc:12:63:aa:4c:db, Protocol: 2048
+2023-08-12 12:52:20,196 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 238, Protocol: 17, Source: 128.193.10.75, Target: 192.168.0.93
+2023-08-12 12:52:20,197 - INFO - UDP Segment: Source Port: 443, Destination Port: 52465
+2023-08-12 12:52:20,244 - INFO - Ethernet Frame: Destination: fc:12:63:aa:4c:db, Source: 40:1c:83:fd:1a:5b, Protocol: 2048
+2023-08-12 12:52:20,244 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 128, Protocol: 17, Source: 192.168.0.93, Target: 128.193.10.75
+2023-08-12 12:52:20,244 - INFO - UDP Segment: Source Port: 52465, Destination Port: 443
+2023-08-12 12:52:20,426 - INFO - Ethernet Frame: Destination: 40:1c:83:fd:1a:5b, Source: fc:12:63:aa:4c:db, Protocol: 2048
+2023-08-12 12:52:20,426 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 238, Protocol: 17, Source: 128.193.10.75, Target: 192.168.0.93
+2023-08-12 12:52:20,430 - INFO - UDP Segment: Source Port: 443, Destination Port: 52465
+2023-08-12 12:52:20,433 - INFO - Ethernet Frame: Destination: fc:12:63:aa:4c:db, Source: 40:1c:83:fd:1a:5b, Protocol: 2048
+2023-08-12 12:52:20,433 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 128, Protocol: 17, Source: 192.168.0.93, Target: 128.193.10.75
+2023-08-12 12:52:20,433 - INFO - UDP Segment: Source Port: 52465, Destination Port: 443
+2023-08-12 12:52:20,598 - INFO - Ethernet Frame: Destination: fc:12:63:aa:4c:db, Source: 40:1c:83:fd:1a:5b, Protocol: 2048
+2023-08-12 12:52:20,598 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 128, Protocol: 17, Source: 192.168.0.93, Target: 128.193.10.75
+2023-08-12 12:52:20,598 - INFO - UDP Segment: Source Port: 52465, Destination Port: 443
+2023-08-12 12:52:20,601 - INFO - Ethernet Frame: Destination: fc:12:63:aa:4c:db, Source: 40:1c:83:fd:1a:5b, Protocol: 2048
+2023-08-12 12:52:20,601 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 128, Protocol: 17, Source: 192.168.0.93, Target: 128.193.10.75
+2023-08-12 12:52:20,601 - INFO - UDP Segment: Source Port: 52465, Destination Port: 443
+2023-08-12 12:52:20,601 - INFO - Ethernet Frame: Destination: fc:12:63:aa:4c:db, Source: 40:1c:83:fd:1a:5b, Protocol: 2048
+2023-08-12 12:52:20,601 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 128, Protocol: 17, Source: 192.168.0.93, Target: 128.193.10.75
+2023-08-12 12:52:20,601 - INFO - UDP Segment: Source Port: 52465, Destination Port: 443
+2023-08-12 12:52:20,636 - INFO - Ethernet Frame: Destination: 40:1c:83:fd:1a:5b, Source: fc:12:63:aa:4c:db, Protocol: 2048
+2023-08-12 12:52:20,636 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 238, Protocol: 17, Source: 128.193.10.75, Target: 192.168.0.93
+2023-08-12 12:52:20,636 - INFO - UDP Segment: Source Port: 443, Destination Port: 52465
+2023-08-12 12:52:22,114 - INFO - Ethernet Frame: Destination: fc:12:63:aa:4c:db, Source: 40:1c:83:fd:1a:5b, Protocol: 2048
+2023-08-12 12:52:22,114 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 128, Protocol: 17, Source: 192.168.0.93, Target: 128.193.10.75
+2023-08-12 12:52:22,116 - INFO - UDP Segment: Source Port: 52465, Destination Port: 443
+2023-08-12 12:52:22,725 - INFO - Ethernet Frame: Destination: fc:12:63:aa:4c:db, Source: 40:1c:83:fd:1a:5b, Protocol: 2054
+2023-08-12 12:52:22,725 - INFO - ARP Packet: Hardware Type: 1, Protocol Type: 2048, Operation: 1, Sender MAC: 40:1c:83:fd:1a:5b, Sender IP: 192.168.0.93, Target MAC: fc:12:63:aa:4c:db, Target IP: 192.168.0.1
+2023-08-12 12:52:22,734 - INFO - Ethernet Frame: Destination: 40:1c:83:fd:1a:5b, Source: fc:12:63:aa:4c:db, Protocol: 2054
+2023-08-12 12:52:22,734 - INFO - ARP Packet: Hardware Type: 1, Protocol Type: 2048, Operation: 2, Sender MAC: fc:12:63:aa:4c:db, Sender IP: 192.168.0.1, Target MAC: 40:1c:83:fd:1a:5b, Target IP: 192.168.0.93
+2023-08-12 12:52:23,231 - INFO - Ethernet Frame: Destination: fc:12:63:aa:4c:db, Source: 40:1c:83:fd:1a:5b, Protocol: 2048
+2023-08-12 12:52:23,231 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 128, Protocol: 17, Source: 192.168.0.93, Target: 128.193.10.75
+2023-08-12 12:52:23,231 - INFO - UDP Segment: Source Port: 52465, Destination Port: 443
