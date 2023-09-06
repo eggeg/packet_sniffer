@@ -1,53 +1,566 @@
-2023-08-12 12:52:17,185 - INFO - Packet Sniffer started.
-2023-08-12 12:52:17,816 - INFO - Ethernet Frame: Destination: fc:12:63:aa:4c:db, Source: 40:1c:83:fd:1a:5b, Protocol: 2048
-2023-08-12 12:52:17,816 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 128, Protocol: 17, Source: 192.168.0.93, Target: 128.193.10.75
-2023-08-12 12:52:17,816 - INFO - UDP Segment: Source Port: 52465, Destination Port: 443
-2023-08-12 12:52:19,188 - INFO - Ethernet Frame: Destination: fc:12:63:aa:4c:db, Source: 40:1c:83:fd:1a:5b, Protocol: 2048
-2023-08-12 12:52:19,188 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 128, Protocol: 6, Source: 192.168.0.93, Target: 128.193.10.75
-2023-08-12 12:52:19,188 - INFO - TCP Segment: Source Port: 58633, Destination Port: 443
-2023-08-12 12:52:19,285 - INFO - Ethernet Frame: Destination: 40:1c:83:fd:1a:5b, Source: fc:12:63:aa:4c:db, Protocol: 2048
-2023-08-12 12:52:19,285 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 238, Protocol: 6, Source: 128.193.10.75, Target: 192.168.0.93
-2023-08-12 12:52:19,285 - INFO - TCP Segment: Source Port: 443, Destination Port: 58633
-2023-08-12 12:52:19,340 - INFO - Ethernet Frame: Destination: 40:1c:83:fd:1a:5b, Source: fc:12:63:aa:4c:db, Protocol: 2048
-2023-08-12 12:52:19,340 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 238, Protocol: 6, Source: 128.193.10.75, Target: 192.168.0.93
-2023-08-12 12:52:19,340 - INFO - TCP Segment: Source Port: 443, Destination Port: 58633
-2023-08-12 12:52:19,340 - INFO - Ethernet Frame: Destination: fc:12:63:aa:4c:db, Source: 40:1c:83:fd:1a:5b, Protocol: 2048
-2023-08-12 12:52:19,340 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 128, Protocol: 6, Source: 192.168.0.93, Target: 128.193.10.75
-2023-08-12 12:52:19,340 - INFO - TCP Segment: Source Port: 58633, Destination Port: 443
-2023-08-12 12:52:20,110 - INFO - Ethernet Frame: Destination: fc:12:63:aa:4c:db, Source: 40:1c:83:fd:1a:5b, Protocol: 2048
-2023-08-12 12:52:20,110 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 128, Protocol: 17, Source: 192.168.0.93, Target: 128.193.10.75
-2023-08-12 12:52:20,110 - INFO - UDP Segment: Source Port: 52465, Destination Port: 443
-2023-08-12 12:52:20,195 - INFO - Ethernet Frame: Destination: 40:1c:83:fd:1a:5b, Source: fc:12:63:aa:4c:db, Protocol: 2048
-2023-08-12 12:52:20,196 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 238, Protocol: 17, Source: 128.193.10.75, Target: 192.168.0.93
-2023-08-12 12:52:20,197 - INFO - UDP Segment: Source Port: 443, Destination Port: 52465
-2023-08-12 12:52:20,244 - INFO - Ethernet Frame: Destination: fc:12:63:aa:4c:db, Source: 40:1c:83:fd:1a:5b, Protocol: 2048
-2023-08-12 12:52:20,244 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 128, Protocol: 17, Source: 192.168.0.93, Target: 128.193.10.75
-2023-08-12 12:52:20,244 - INFO - UDP Segment: Source Port: 52465, Destination Port: 443
-2023-08-12 12:52:20,426 - INFO - Ethernet Frame: Destination: 40:1c:83:fd:1a:5b, Source: fc:12:63:aa:4c:db, Protocol: 2048
-2023-08-12 12:52:20,426 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 238, Protocol: 17, Source: 128.193.10.75, Target: 192.168.0.93
-2023-08-12 12:52:20,430 - INFO - UDP Segment: Source Port: 443, Destination Port: 52465
-2023-08-12 12:52:20,433 - INFO - Ethernet Frame: Destination: fc:12:63:aa:4c:db, Source: 40:1c:83:fd:1a:5b, Protocol: 2048
-2023-08-12 12:52:20,433 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 128, Protocol: 17, Source: 192.168.0.93, Target: 128.193.10.75
-2023-08-12 12:52:20,433 - INFO - UDP Segment: Source Port: 52465, Destination Port: 443
-2023-08-12 12:52:20,598 - INFO - Ethernet Frame: Destination: fc:12:63:aa:4c:db, Source: 40:1c:83:fd:1a:5b, Protocol: 2048
-2023-08-12 12:52:20,598 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 128, Protocol: 17, Source: 192.168.0.93, Target: 128.193.10.75
-2023-08-12 12:52:20,598 - INFO - UDP Segment: Source Port: 52465, Destination Port: 443
-2023-08-12 12:52:20,601 - INFO - Ethernet Frame: Destination: fc:12:63:aa:4c:db, Source: 40:1c:83:fd:1a:5b, Protocol: 2048
-2023-08-12 12:52:20,601 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 128, Protocol: 17, Source: 192.168.0.93, Target: 128.193.10.75
-2023-08-12 12:52:20,601 - INFO - UDP Segment: Source Port: 52465, Destination Port: 443
-2023-08-12 12:52:20,601 - INFO - Ethernet Frame: Destination: fc:12:63:aa:4c:db, Source: 40:1c:83:fd:1a:5b, Protocol: 2048
-2023-08-12 12:52:20,601 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 128, Protocol: 17, Source: 192.168.0.93, Target: 128.193.10.75
-2023-08-12 12:52:20,601 - INFO - UDP Segment: Source Port: 52465, Destination Port: 443
-2023-08-12 12:52:20,636 - INFO - Ethernet Frame: Destination: 40:1c:83:fd:1a:5b, Source: fc:12:63:aa:4c:db, Protocol: 2048
-2023-08-12 12:52:20,636 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 238, Protocol: 17, Source: 128.193.10.75, Target: 192.168.0.93
-2023-08-12 12:52:20,636 - INFO - UDP Segment: Source Port: 443, Destination Port: 52465
-2023-08-12 12:52:22,114 - INFO - Ethernet Frame: Destination: fc:12:63:aa:4c:db, Source: 40:1c:83:fd:1a:5b, Protocol: 2048
-2023-08-12 12:52:22,114 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 128, Protocol: 17, Source: 192.168.0.93, Target: 128.193.10.75
-2023-08-12 12:52:22,116 - INFO - UDP Segment: Source Port: 52465, Destination Port: 443
-2023-08-12 12:52:22,725 - INFO - Ethernet Frame: Destination: fc:12:63:aa:4c:db, Source: 40:1c:83:fd:1a:5b, Protocol: 2054
-2023-08-12 12:52:22,725 - INFO - ARP Packet: Hardware Type: 1, Protocol Type: 2048, Operation: 1, Sender MAC: 40:1c:83:fd:1a:5b, Sender IP: 192.168.0.93, Target MAC: fc:12:63:aa:4c:db, Target IP: 192.168.0.1
-2023-08-12 12:52:22,734 - INFO - Ethernet Frame: Destination: 40:1c:83:fd:1a:5b, Source: fc:12:63:aa:4c:db, Protocol: 2054
-2023-08-12 12:52:22,734 - INFO - ARP Packet: Hardware Type: 1, Protocol Type: 2048, Operation: 2, Sender MAC: fc:12:63:aa:4c:db, Sender IP: 192.168.0.1, Target MAC: 40:1c:83:fd:1a:5b, Target IP: 192.168.0.93
-2023-08-12 12:52:23,231 - INFO - Ethernet Frame: Destination: fc:12:63:aa:4c:db, Source: 40:1c:83:fd:1a:5b, Protocol: 2048
-2023-08-12 12:52:23,231 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 128, Protocol: 17, Source: 192.168.0.93, Target: 128.193.10.75
-2023-08-12 12:52:23,231 - INFO - UDP Segment: Source Port: 52465, Destination Port: 443
+2023-09-06 10:42:12,506 - INFO - Packet Sniffer started.
+2023-09-06 10:42:12,926 - INFO - Ethernet Frame: Destination: fc:12:63:aa:4c:db, Source: 40:1c:83:fd:1a:5b, Protocol: 34525
+2023-09-06 10:42:12,926 - INFO - UDP Segment: Source Port: 52115, Destination Port: 53
+2023-09-06 10:42:12,928 - INFO - IPv6 Packet: Version: 6, Traffic Class: 0, Flow Label: 505200, Payload Length: 69, Next Header: 17, Hop Limit: 64, Source: fe80::cc6a:323:234f:c157, Target: fe80::fe12:63ff:feaa:4cdb
+2023-09-06 10:42:12,930 - INFO - Ethernet Frame: Destination: fc:12:63:aa:4c:db, Source: 40:1c:83:fd:1a:5b, Protocol: 34525
+2023-09-06 10:42:12,930 - INFO - UDP Segment: Source Port: 50882, Destination Port: 53
+2023-09-06 10:42:12,931 - INFO - IPv6 Packet: Version: 6, Traffic Class: 0, Flow Label: 819527, Payload Length: 69, Next Header: 17, Hop Limit: 64, Source: fe80::cc6a:323:234f:c157, Target: fe80::fe12:63ff:feaa:4cdb
+2023-09-06 10:42:12,969 - INFO - Ethernet Frame: Destination: 40:1c:83:fd:1a:5b, Source: fc:12:63:aa:4c:db, Protocol: 34525
+2023-09-06 10:42:12,969 - INFO - UDP Segment: Source Port: 53, Destination Port: 52115
+2023-09-06 10:42:12,975 - INFO - IPv6 Packet: Version: 6, Traffic Class: 0, Flow Label: 856871, Payload Length: 120, Next Header: 17, Hop Limit: 64, Source: fe80::fe12:63ff:feaa:4cdb, Target: fe80::cc6a:323:234f:c157
+2023-09-06 10:42:12,976 - INFO - Ethernet Frame: Destination: 40:1c:83:fd:1a:5b, Source: fc:12:63:aa:4c:db, Protocol: 34525
+2023-09-06 10:42:12,977 - INFO - UDP Segment: Source Port: 53, Destination Port: 50882
+2023-09-06 10:42:12,977 - INFO - IPv6 Packet: Version: 6, Traffic Class: 0, Flow Label: 841974, Payload Length: 120, Next Header: 17, Hop Limit: 64, Source: fe80::fe12:63ff:feaa:4cdb, Target: fe80::cc6a:323:234f:c157
+2023-09-06 10:42:12,980 - INFO - Ethernet Frame: Destination: fc:12:63:aa:4c:db, Source: 40:1c:83:fd:1a:5b, Protocol: 34525
+2023-09-06 10:42:12,980 - INFO - TCP Segment: Source Port: 49768, Destination Port: 443
+2023-09-06 10:42:12,980 - INFO - IPv6 Packet: Version: 6, Traffic Class: 0, Flow Label: 56829, Payload Length: 138, Next Header: 6, Hop Limit: 64, Source: 2600:100f:a005:c23:44eb:22cb:903f:2b80, Target: 2607:f8b0:400a:800::200e
+2023-09-06 10:42:12,982 - INFO - Ethernet Frame: Destination: fc:12:63:aa:4c:db, Source: 40:1c:83:fd:1a:5b, Protocol: 34525
+2023-09-06 10:42:12,983 - INFO - UDP Segment: Source Port: 56599, Destination Port: 53
+2023-09-06 10:42:12,983 - INFO - IPv6 Packet: Version: 6, Traffic Class: 0, Flow Label: 590441, Payload Length: 41, Next Header: 17, Hop Limit: 64, Source: fe80::cc6a:323:234f:c157, Target: fe80::fe12:63ff:feaa:4cdb
+2023-09-06 10:42:12,984 - INFO - Ethernet Frame: Destination: 40:1c:83:fd:1a:5b, Source: fc:12:63:aa:4c:db, Protocol: 34525
+2023-09-06 10:42:12,984 - INFO - UDP Segment: Source Port: 53, Destination Port: 56599
+2023-09-06 10:42:12,984 - INFO - IPv6 Packet: Version: 6, Traffic Class: 0, Flow Label: 826071, Payload Length: 57, Next Header: 17, Hop Limit: 64, Source: fe80::fe12:63ff:feaa:4cdb, Target: fe80::cc6a:323:234f:c157
+2023-09-06 10:42:12,985 - INFO - Ethernet Frame: Destination: fc:12:63:aa:4c:db, Source: 40:1c:83:fd:1a:5b, Protocol: 34525
+2023-09-06 10:42:12,986 - INFO - UDP Segment: Source Port: 63090, Destination Port: 53
+2023-09-06 10:42:12,987 - INFO - IPv6 Packet: Version: 6, Traffic Class: 0, Flow Label: 423218, Payload Length: 41, Next Header: 17, Hop Limit: 64, Source: fe80::cc6a:323:234f:c157, Target: fe80::fe12:63ff:feaa:4cdb
+2023-09-06 10:42:13,015 - INFO - Ethernet Frame: Destination: 40:1c:83:fd:1a:5b, Source: fc:12:63:aa:4c:db, Protocol: 34525
+2023-09-06 10:42:13,016 - INFO - UDP Segment: Source Port: 53, Destination Port: 63090
+2023-09-06 10:42:13,016 - INFO - IPv6 Packet: Version: 6, Traffic Class: 0, Flow Label: 528617, Payload Length: 101, Next Header: 17, Hop Limit: 64, Source: fe80::fe12:63ff:feaa:4cdb, Target: fe80::cc6a:323:234f:c157
+2023-09-06 10:42:13,017 - INFO - Ethernet Frame: Destination: fc:12:63:aa:4c:db, Source: 40:1c:83:fd:1a:5b, Protocol: 2048
+2023-09-06 10:42:13,017 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 128, Protocol: 6, Source: 192.168.0.93, Target: 23.29.105.232
+2023-09-06 10:42:13,018 - INFO - TCP Segment: Source Port: 49885, Destination Port: 80
+2023-09-06 10:42:13,019 - INFO - Ethernet Frame: Destination: 40:1c:83:fd:1a:5b, Source: fc:12:63:aa:4c:db, Protocol: 34525
+2023-09-06 10:42:13,020 - INFO - TCP Segment: Source Port: 443, Destination Port: 49768
+2023-09-06 10:42:13,021 - INFO - IPv6 Packet: Version: 6, Traffic Class: 0, Flow Label: 146045, Payload Length: 20, Next Header: 6, Hop Limit: 54, Source: 2607:f8b0:400a:800::200e, Target: 2600:100f:a005:c23:44eb:22cb:903f:2b80
+2023-09-06 10:42:13,023 - INFO - Ethernet Frame: Destination: 40:1c:83:fd:1a:5b, Source: fc:12:63:aa:4c:db, Protocol: 34525
+2023-09-06 10:42:13,023 - INFO - TCP Segment: Source Port: 443, Destination Port: 49768
+2023-09-06 10:42:13,023 - INFO - IPv6 Packet: Version: 6, Traffic Class: 0, Flow Label: 146045, Payload Length: 661, Next Header: 6, Hop Limit: 54, Source: 2607:f8b0:400a:800::200e, Target: 2600:100f:a005:c23:44eb:22cb:903f:2b80
+2023-09-06 10:42:13,023 - INFO - Ethernet Frame: Destination: fc:12:63:aa:4c:db, Source: 40:1c:83:fd:1a:5b, Protocol: 34525
+2023-09-06 10:42:13,023 - INFO - TCP Segment: Source Port: 49770, Destination Port: 443
+2023-09-06 10:42:13,028 - INFO - IPv6 Packet: Version: 6, Traffic Class: 0, Flow Label: 696623, Payload Length: 142, Next Header: 6, Hop Limit: 64, Source: 2600:100f:a005:c23:44eb:22cb:903f:2b80, Target: 2607:f8b0:400a:804::2004
+2023-09-06 10:42:13,071 - INFO - Ethernet Frame: Destination: 40:1c:83:fd:1a:5b, Source: fc:12:63:aa:4c:db, Protocol: 34525
+2023-09-06 10:42:13,071 - INFO - TCP Segment: Source Port: 443, Destination Port: 49770
+2023-09-06 10:42:13,075 - INFO - IPv6 Packet: Version: 6, Traffic Class: 128, Flow Label: 673293, Payload Length: 20, Next Header: 6, Hop Limit: 118, Source: 2607:f8b0:400a:804::2004, Target: 2600:100f:a005:c23:44eb:22cb:903f:2b80
+2023-09-06 10:42:13,075 - INFO - Ethernet Frame: Destination: fc:12:63:aa:4c:db, Source: 40:1c:83:fd:1a:5b, Protocol: 34525
+2023-09-06 10:42:13,076 - INFO - TCP Segment: Source Port: 49768, Destination Port: 443
+2023-09-06 10:42:13,076 - INFO - IPv6 Packet: Version: 6, Traffic Class: 0, Flow Label: 56829, Payload Length: 20, Next Header: 6, Hop Limit: 64, Source: 2600:100f:a005:c23:44eb:22cb:903f:2b80, Target: 2607:f8b0:400a:800::200e
+2023-09-06 10:42:13,079 - INFO - Ethernet Frame: Destination: 40:1c:83:fd:1a:5b, Source: fc:12:63:aa:4c:db, Protocol: 34525
+2023-09-06 10:42:13,079 - INFO - TCP Segment: Source Port: 443, Destination Port: 49770
+2023-09-06 10:42:13,079 - INFO - IPv6 Packet: Version: 6, Traffic Class: 128, Flow Label: 673293, Payload Length: 1231, Next Header: 6, Hop Limit: 118, Source: 2607:f8b0:400a:804::2004, Target: 2600:100f:a005:c23:44eb:22cb:903f:2b80
+2023-09-06 10:42:13,120 - INFO - Ethernet Frame: Destination: 40:1c:83:fd:1a:5b, Source: fc:12:63:aa:4c:db, Protocol: 2048
+2023-09-06 10:42:13,120 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 242, Protocol: 6, Source: 23.29.105.232, Target: 192.168.0.93
+2023-09-06 10:42:13,121 - INFO - TCP Segment: Source Port: 80, Destination Port: 49885
+2023-09-06 10:42:13,121 - INFO - Ethernet Frame: Destination: fc:12:63:aa:4c:db, Source: 40:1c:83:fd:1a:5b, Protocol: 2048
+2023-09-06 10:42:13,122 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 128, Protocol: 6, Source: 192.168.0.93, Target: 23.29.105.232
+2023-09-06 10:42:13,122 - INFO - TCP Segment: Source Port: 49885, Destination Port: 80
+2023-09-06 10:42:13,123 - INFO - Ethernet Frame: Destination: fc:12:63:aa:4c:db, Source: 40:1c:83:fd:1a:5b, Protocol: 2048
+2023-09-06 10:42:13,124 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 128, Protocol: 6, Source: 192.168.0.93, Target: 23.29.105.232
+2023-09-06 10:42:13,125 - INFO - TCP Segment: Source Port: 49885, Destination Port: 80
+2023-09-06 10:42:13,134 - INFO - Ethernet Frame: Destination: fc:12:63:aa:4c:db, Source: 40:1c:83:fd:1a:5b, Protocol: 34525
+2023-09-06 10:42:13,134 - INFO - TCP Segment: Source Port: 49770, Destination Port: 443
+2023-09-06 10:42:13,137 - INFO - IPv6 Packet: Version: 6, Traffic Class: 0, Flow Label: 696623, Payload Length: 20, Next Header: 6, Hop Limit: 64, Source: 2600:100f:a005:c23:44eb:22cb:903f:2b80, Target: 2607:f8b0:400a:804::2004
+2023-09-06 10:42:13,220 - INFO - Ethernet Frame: Destination: 40:1c:83:fd:1a:5b, Source: fc:12:63:aa:4c:db, Protocol: 2048
+2023-09-06 10:42:13,220 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 242, Protocol: 6, Source: 23.29.105.232, Target: 192.168.0.93
+2023-09-06 10:42:13,228 - INFO - TCP Segment: Source Port: 80, Destination Port: 49885
+2023-09-06 10:42:13,229 - INFO - Ethernet Frame: Destination: fc:12:63:aa:4c:db, Source: 40:1c:83:fd:1a:5b, Protocol: 2048
+2023-09-06 10:42:13,230 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 128, Protocol: 6, Source: 192.168.0.93, Target: 23.29.105.232
+2023-09-06 10:42:13,231 - INFO - TCP Segment: Source Port: 49885, Destination Port: 80
+2023-09-06 10:42:13,232 - INFO - Ethernet Frame: Destination: fc:12:63:aa:4c:db, Source: 40:1c:83:fd:1a:5b, Protocol: 2048
+2023-09-06 10:42:13,232 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 128, Protocol: 6, Source: 192.168.0.93, Target: 23.29.105.232
+2023-09-06 10:42:13,232 - INFO - TCP Segment: Source Port: 49885, Destination Port: 80
+2023-09-06 10:42:13,552 - INFO - Ethernet Frame: Destination: fc:12:63:aa:4c:db, Source: 40:1c:83:fd:1a:5b, Protocol: 2048
+2023-09-06 10:42:13,552 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 128, Protocol: 6, Source: 192.168.0.93, Target: 23.29.105.232
+2023-09-06 10:42:13,552 - INFO - TCP Segment: Source Port: 49885, Destination Port: 80
+2023-09-06 10:42:14,026 - INFO - Ethernet Frame: Destination: 40:1c:83:fd:1a:5b, Source: fc:12:63:aa:4c:db, Protocol: 34525
+2023-09-06 10:42:14,026 - INFO - IPv6 Packet: Version: 6, Traffic Class: 0, Flow Label: 0, Payload Length: 32, Next Header: 58, Hop Limit: 255, Source: fe80::fe12:63ff:feaa:4cdb, Target: fe80::cc6a:323:234f:c157
+2023-09-06 10:42:14,045 - INFO - Ethernet Frame: Destination: fc:12:63:aa:4c:db, Source: 40:1c:83:fd:1a:5b, Protocol: 34525
+2023-09-06 10:42:14,045 - INFO - IPv6 Packet: Version: 6, Traffic Class: 0, Flow Label: 0, Payload Length: 32, Next Header: 58, Hop Limit: 255, Source: fe80::cc6a:323:234f:c157, Target: fe80::fe12:63ff:feaa:4cdb
+2023-09-06 10:42:14,058 - INFO - Ethernet Frame: Destination: 40:1c:83:fd:1a:5b, Source: fc:12:63:aa:4c:db, Protocol: 2048
+2023-09-06 10:42:14,060 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 52, Protocol: 6, Source: 192.229.211.108, Target: 192.168.0.93
+2023-09-06 10:42:14,060 - INFO - TCP Segment: Source Port: 80, Destination Port: 49726
+2023-09-06 10:42:14,160 - INFO - Ethernet Frame: Destination: fc:12:63:aa:4c:db, Source: 40:1c:83:fd:1a:5b, Protocol: 2048
+2023-09-06 10:42:14,160 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 128, Protocol: 6, Source: 192.168.0.93, Target: 192.229.211.108
+2023-09-06 10:42:14,160 - INFO - TCP Segment: Source Port: 49726, Destination Port: 80
+2023-09-06 10:42:14,164 - INFO - Ethernet Frame: Destination: fc:12:63:aa:4c:db, Source: 40:1c:83:fd:1a:5b, Protocol: 2048
+2023-09-06 10:42:14,164 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 128, Protocol: 6, Source: 192.168.0.93, Target: 23.29.105.232
+2023-09-06 10:42:14,168 - INFO - TCP Segment: Source Port: 49885, Destination Port: 80
+2023-09-06 10:42:14,321 - INFO - Ethernet Frame: Destination: 40:1c:83:fd:1a:5b, Source: fc:12:63:aa:4c:db, Protocol: 2048
+2023-09-06 10:42:14,321 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 242, Protocol: 6, Source: 23.29.105.232, Target: 192.168.0.93
+2023-09-06 10:42:14,335 - INFO - TCP Segment: Source Port: 80, Destination Port: 49885
+2023-09-06 10:42:14,935 - INFO - Ethernet Frame: Destination: fc:12:63:aa:4c:db, Source: 40:1c:83:fd:1a:5b, Protocol: 34525
+2023-09-06 10:42:14,935 - INFO - UDP Segment: Source Port: 58347, Destination Port: 53
+2023-09-06 10:42:14,941 - INFO - IPv6 Packet: Version: 6, Traffic Class: 0, Flow Label: 819032, Payload Length: 69, Next Header: 17, Hop Limit: 64, Source: fe80::cc6a:323:234f:c157, Target: fe80::fe12:63ff:feaa:4cdb
+2023-09-06 10:42:14,941 - INFO - Ethernet Frame: Destination: fc:12:63:aa:4c:db, Source: 40:1c:83:fd:1a:5b, Protocol: 34525
+2023-09-06 10:42:14,941 - INFO - UDP Segment: Source Port: 61670, Destination Port: 53
+2023-09-06 10:42:14,945 - INFO - IPv6 Packet: Version: 6, Traffic Class: 0, Flow Label: 1040367, Payload Length: 69, Next Header: 17, Hop Limit: 64, Source: fe80::cc6a:323:234f:c157, Target: fe80::fe12:63ff:feaa:4cdb
+2023-09-06 10:42:14,993 - INFO - Ethernet Frame: Destination: 40:1c:83:fd:1a:5b, Source: fc:12:63:aa:4c:db, Protocol: 34525
+2023-09-06 10:42:14,994 - INFO - UDP Segment: Source Port: 53, Destination Port: 58347
+2023-09-06 10:42:14,994 - INFO - IPv6 Packet: Version: 6, Traffic Class: 0, Flow Label: 408877, Payload Length: 120, Next Header: 17, Hop Limit: 64, Source: fe80::fe12:63ff:feaa:4cdb, Target: fe80::cc6a:323:234f:c157
+2023-09-06 10:42:15,000 - INFO - Ethernet Frame: Destination: 40:1c:83:fd:1a:5b, Source: fc:12:63:aa:4c:db, Protocol: 34525
+2023-09-06 10:42:15,001 - INFO - UDP Segment: Source Port: 53, Destination Port: 61670
+2023-09-06 10:42:15,002 - INFO - IPv6 Packet: Version: 6, Traffic Class: 0, Flow Label: 621567, Payload Length: 120, Next Header: 17, Hop Limit: 64, Source: fe80::fe12:63ff:feaa:4cdb, Target: fe80::cc6a:323:234f:c157
+2023-09-06 10:42:15,004 - INFO - Ethernet Frame: Destination: fc:12:63:aa:4c:db, Source: 40:1c:83:fd:1a:5b, Protocol: 34525
+2023-09-06 10:42:15,005 - INFO - TCP Segment: Source Port: 49768, Destination Port: 443
+2023-09-06 10:42:15,006 - INFO - IPv6 Packet: Version: 6, Traffic Class: 0, Flow Label: 56829, Payload Length: 138, Next Header: 6, Hop Limit: 64, Source: 2600:100f:a005:c23:44eb:22cb:903f:2b80, Target: 2607:f8b0:400a:800::200e
+2023-09-06 10:42:15,035 - INFO - Ethernet Frame: Destination: fc:12:63:aa:4c:db, Source: 40:1c:83:fd:1a:5b, Protocol: 34525
+2023-09-06 10:42:15,035 - INFO - UDP Segment: Source Port: 59387, Destination Port: 53
+2023-09-06 10:42:15,035 - INFO - IPv6 Packet: Version: 6, Traffic Class: 0, Flow Label: 726506, Payload Length: 41, Next Header: 17, Hop Limit: 64, Source: fe80::cc6a:323:234f:c157, Target: fe80::fe12:63ff:feaa:4cdb
+2023-09-06 10:42:15,040 - INFO - Ethernet Frame: Destination: fc:12:63:aa:4c:db, Source: 40:1c:83:fd:1a:5b, Protocol: 34525
+2023-09-06 10:42:15,040 - INFO - UDP Segment: Source Port: 50631, Destination Port: 53
+2023-09-06 10:42:15,041 - INFO - IPv6 Packet: Version: 6, Traffic Class: 0, Flow Label: 884539, Payload Length: 41, Next Header: 17, Hop Limit: 64, Source: fe80::cc6a:323:234f:c157, Target: fe80::fe12:63ff:feaa:4cdb
+2023-09-06 10:42:15,043 - INFO - Ethernet Frame: Destination: 40:1c:83:fd:1a:5b, Source: fc:12:63:aa:4c:db, Protocol: 34525
+2023-09-06 10:42:15,043 - INFO - UDP Segment: Source Port: 53, Destination Port: 59387
+2023-09-06 10:42:15,043 - INFO - IPv6 Packet: Version: 6, Traffic Class: 0, Flow Label: 462738, Payload Length: 57, Next Header: 17, Hop Limit: 64, Source: fe80::fe12:63ff:feaa:4cdb, Target: fe80::cc6a:323:234f:c157
+2023-09-06 10:42:15,044 - INFO - Ethernet Frame: Destination: 40:1c:83:fd:1a:5b, Source: fc:12:63:aa:4c:db, Protocol: 34525
+2023-09-06 10:42:15,044 - INFO - TCP Segment: Source Port: 443, Destination Port: 49768
+2023-09-06 10:42:15,045 - INFO - IPv6 Packet: Version: 6, Traffic Class: 0, Flow Label: 146045, Payload Length: 20, Next Header: 6, Hop Limit: 54, Source: 2607:f8b0:400a:800::200e, Target: 2600:100f:a005:c23:44eb:22cb:903f:2b80
+2023-09-06 10:42:15,046 - INFO - Ethernet Frame: Destination: 40:1c:83:fd:1a:5b, Source: fc:12:63:aa:4c:db, Protocol: 34525
+2023-09-06 10:42:15,047 - INFO - UDP Segment: Source Port: 53, Destination Port: 50631
+2023-09-06 10:42:15,047 - INFO - IPv6 Packet: Version: 6, Traffic Class: 0, Flow Label: 442032, Payload Length: 101, Next Header: 17, Hop Limit: 64, Source: fe80::fe12:63ff:feaa:4cdb, Target: fe80::cc6a:323:234f:c157
+2023-09-06 10:42:15,048 - INFO - Ethernet Frame: Destination: fc:12:63:aa:4c:db, Source: 40:1c:83:fd:1a:5b, Protocol: 2048
+2023-09-06 10:42:15,048 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 128, Protocol: 6, Source: 192.168.0.93, Target: 23.29.105.232
+2023-09-06 10:42:15,048 - INFO - TCP Segment: Source Port: 49886, Destination Port: 80
+2023-09-06 10:42:15,051 - INFO - Ethernet Frame: Destination: 40:1c:83:fd:1a:5b, Source: fc:12:63:aa:4c:db, Protocol: 34525
+2023-09-06 10:42:15,051 - INFO - TCP Segment: Source Port: 443, Destination Port: 49768
+2023-09-06 10:42:15,051 - INFO - IPv6 Packet: Version: 6, Traffic Class: 0, Flow Label: 146045, Payload Length: 661, Next Header: 6, Hop Limit: 54, Source: 2607:f8b0:400a:800::200e, Target: 2600:100f:a005:c23:44eb:22cb:903f:2b80
+2023-09-06 10:42:15,085 - INFO - Ethernet Frame: Destination: fc:12:63:aa:4c:db, Source: 40:1c:83:fd:1a:5b, Protocol: 34525
+2023-09-06 10:42:15,085 - INFO - TCP Segment: Source Port: 49770, Destination Port: 443
+2023-09-06 10:42:15,089 - INFO - IPv6 Packet: Version: 6, Traffic Class: 0, Flow Label: 696623, Payload Length: 142, Next Header: 6, Hop Limit: 64, Source: 2600:100f:a005:c23:44eb:22cb:903f:2b80, Target: 2607:f8b0:400a:804::2004
+2023-09-06 10:42:15,092 - INFO - Ethernet Frame: Destination: fc:12:63:aa:4c:db, Source: 40:1c:83:fd:1a:5b, Protocol: 34525
+2023-09-06 10:42:15,092 - INFO - TCP Segment: Source Port: 49768, Destination Port: 443
+2023-09-06 10:42:15,093 - INFO - IPv6 Packet: Version: 6, Traffic Class: 0, Flow Label: 56829, Payload Length: 20, Next Header: 6, Hop Limit: 64, Source: 2600:100f:a005:c23:44eb:22cb:903f:2b80, Target: 2607:f8b0:400a:800::200e
+2023-09-06 10:42:15,094 - INFO - Ethernet Frame: Destination: 40:1c:83:fd:1a:5b, Source: fc:12:63:aa:4c:db, Protocol: 34525
+2023-09-06 10:42:15,094 - INFO - TCP Segment: Source Port: 443, Destination Port: 49770
+2023-09-06 10:42:15,094 - INFO - IPv6 Packet: Version: 6, Traffic Class: 128, Flow Label: 673293, Payload Length: 20, Next Header: 6, Hop Limit: 118, Source: 2607:f8b0:400a:804::2004, Target: 2600:100f:a005:c23:44eb:22cb:903f:2b80
+2023-09-06 10:42:15,113 - INFO - Ethernet Frame: Destination: 40:1c:83:fd:1a:5b, Source: fc:12:63:aa:4c:db, Protocol: 34525
+2023-09-06 10:42:15,113 - INFO - TCP Segment: Source Port: 443, Destination Port: 49770
+2023-09-06 10:42:15,113 - INFO - IPv6 Packet: Version: 6, Traffic Class: 128, Flow Label: 673293, Payload Length: 1231, Next Header: 6, Hop Limit: 118, Source: 2607:f8b0:400a:804::2004, Target: 2600:100f:a005:c23:44eb:22cb:903f:2b80
+2023-09-06 10:42:15,134 - INFO - Ethernet Frame: Destination: 40:1c:83:fd:1a:5b, Source: fc:12:63:aa:4c:db, Protocol: 2048
+2023-09-06 10:42:15,134 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 242, Protocol: 6, Source: 23.29.105.232, Target: 192.168.0.93
+2023-09-06 10:42:15,134 - INFO - TCP Segment: Source Port: 80, Destination Port: 49886
+2023-09-06 10:42:15,136 - INFO - Ethernet Frame: Destination: fc:12:63:aa:4c:db, Source: 40:1c:83:fd:1a:5b, Protocol: 2048
+2023-09-06 10:42:15,137 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 128, Protocol: 6, Source: 192.168.0.93, Target: 23.29.105.232
+2023-09-06 10:42:15,138 - INFO - TCP Segment: Source Port: 49886, Destination Port: 80
+2023-09-06 10:42:15,142 - INFO - Ethernet Frame: Destination: fc:12:63:aa:4c:db, Source: 40:1c:83:fd:1a:5b, Protocol: 2048
+2023-09-06 10:42:15,145 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 128, Protocol: 6, Source: 192.168.0.93, Target: 23.29.105.232
+2023-09-06 10:42:15,145 - INFO - TCP Segment: Source Port: 49886, Destination Port: 80
+2023-09-06 10:42:15,155 - INFO - Ethernet Frame: Destination: fc:12:63:aa:4c:db, Source: 40:1c:83:fd:1a:5b, Protocol: 34525
+2023-09-06 10:42:15,155 - INFO - TCP Segment: Source Port: 49770, Destination Port: 443
+2023-09-06 10:42:15,155 - INFO - IPv6 Packet: Version: 6, Traffic Class: 0, Flow Label: 696623, Payload Length: 20, Next Header: 6, Hop Limit: 64, Source: 2600:100f:a005:c23:44eb:22cb:903f:2b80, Target: 2607:f8b0:400a:804::2004
+2023-09-06 10:42:15,244 - INFO - Ethernet Frame: Destination: 40:1c:83:fd:1a:5b, Source: fc:12:63:aa:4c:db, Protocol: 2048
+2023-09-06 10:42:15,244 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 242, Protocol: 6, Source: 23.29.105.232, Target: 192.168.0.93
+2023-09-06 10:42:15,245 - INFO - TCP Segment: Source Port: 80, Destination Port: 49886
+2023-09-06 10:42:15,246 - INFO - Ethernet Frame: Destination: fc:12:63:aa:4c:db, Source: 40:1c:83:fd:1a:5b, Protocol: 2048
+2023-09-06 10:42:15,246 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 128, Protocol: 6, Source: 192.168.0.93, Target: 23.29.105.232
+2023-09-06 10:42:15,246 - INFO - TCP Segment: Source Port: 49886, Destination Port: 80
+2023-09-06 10:42:15,246 - INFO - Ethernet Frame: Destination: fc:12:63:aa:4c:db, Source: 40:1c:83:fd:1a:5b, Protocol: 2048
+2023-09-06 10:42:15,246 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 128, Protocol: 6, Source: 192.168.0.93, Target: 23.29.105.232
+2023-09-06 10:42:15,246 - INFO - TCP Segment: Source Port: 49886, Destination Port: 80
+2023-09-06 10:42:15,343 - INFO - Ethernet Frame: Destination: 40:1c:83:fd:1a:5b, Source: fc:12:63:aa:4c:db, Protocol: 2048
+2023-09-06 10:42:15,343 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 242, Protocol: 6, Source: 23.29.105.232, Target: 192.168.0.93
+2023-09-06 10:42:15,347 - INFO - TCP Segment: Source Port: 80, Destination Port: 49886
+2023-09-06 10:42:16,953 - INFO - Ethernet Frame: Destination: fc:12:63:aa:4c:db, Source: 40:1c:83:fd:1a:5b, Protocol: 34525
+2023-09-06 10:42:16,953 - INFO - UDP Segment: Source Port: 56445, Destination Port: 53
+2023-09-06 10:42:16,953 - INFO - IPv6 Packet: Version: 6, Traffic Class: 0, Flow Label: 715115, Payload Length: 69, Next Header: 17, Hop Limit: 64, Source: fe80::cc6a:323:234f:c157, Target: fe80::fe12:63ff:feaa:4cdb
+2023-09-06 10:42:16,957 - INFO - Ethernet Frame: Destination: fc:12:63:aa:4c:db, Source: 40:1c:83:fd:1a:5b, Protocol: 34525
+2023-09-06 10:42:16,957 - INFO - UDP Segment: Source Port: 63498, Destination Port: 53
+2023-09-06 10:42:16,959 - INFO - IPv6 Packet: Version: 6, Traffic Class: 0, Flow Label: 360266, Payload Length: 69, Next Header: 17, Hop Limit: 64, Source: fe80::cc6a:323:234f:c157, Target: fe80::fe12:63ff:feaa:4cdb
+2023-09-06 10:42:16,990 - INFO - Ethernet Frame: Destination: 40:1c:83:fd:1a:5b, Source: fc:12:63:aa:4c:db, Protocol: 34525
+2023-09-06 10:42:16,991 - INFO - UDP Segment: Source Port: 53, Destination Port: 56445
+2023-09-06 10:42:16,992 - INFO - IPv6 Packet: Version: 6, Traffic Class: 0, Flow Label: 67261, Payload Length: 120, Next Header: 17, Hop Limit: 64, Source: fe80::fe12:63ff:feaa:4cdb, Target: fe80::cc6a:323:234f:c157
+2023-09-06 10:42:16,994 - INFO - Ethernet Frame: Destination: 40:1c:83:fd:1a:5b, Source: fc:12:63:aa:4c:db, Protocol: 34525
+2023-09-06 10:42:16,994 - INFO - UDP Segment: Source Port: 53, Destination Port: 63498
+2023-09-06 10:42:16,996 - INFO - IPv6 Packet: Version: 6, Traffic Class: 0, Flow Label: 70471, Payload Length: 120, Next Header: 17, Hop Limit: 64, Source: fe80::fe12:63ff:feaa:4cdb, Target: fe80::cc6a:323:234f:c157
+2023-09-06 10:42:16,996 - INFO - Ethernet Frame: Destination: fc:12:63:aa:4c:db, Source: 40:1c:83:fd:1a:5b, Protocol: 34525
+2023-09-06 10:42:16,996 - INFO - TCP Segment: Source Port: 49768, Destination Port: 443
+2023-09-06 10:42:16,997 - INFO - IPv6 Packet: Version: 6, Traffic Class: 0, Flow Label: 56829, Payload Length: 138, Next Header: 6, Hop Limit: 64, Source: 2600:100f:a005:c23:44eb:22cb:903f:2b80, Target: 2607:f8b0:400a:800::200e
+2023-09-06 10:42:16,997 - INFO - Ethernet Frame: Destination: fc:12:63:aa:4c:db, Source: 40:1c:83:fd:1a:5b, Protocol: 34525
+2023-09-06 10:42:16,997 - INFO - UDP Segment: Source Port: 52894, Destination Port: 53
+2023-09-06 10:42:16,999 - INFO - IPv6 Packet: Version: 6, Traffic Class: 0, Flow Label: 858219, Payload Length: 41, Next Header: 17, Hop Limit: 64, Source: fe80::cc6a:323:234f:c157, Target: fe80::fe12:63ff:feaa:4cdb
+2023-09-06 10:42:17,001 - INFO - Ethernet Frame: Destination: fc:12:63:aa:4c:db, Source: 40:1c:83:fd:1a:5b, Protocol: 34525
+2023-09-06 10:42:17,002 - INFO - UDP Segment: Source Port: 55920, Destination Port: 53
+2023-09-06 10:42:17,002 - INFO - IPv6 Packet: Version: 6, Traffic Class: 0, Flow Label: 747869, Payload Length: 41, Next Header: 17, Hop Limit: 64, Source: fe80::cc6a:323:234f:c157, Target: fe80::fe12:63ff:feaa:4cdb
+2023-09-06 10:42:17,003 - INFO - Ethernet Frame: Destination: 40:1c:83:fd:1a:5b, Source: fc:12:63:aa:4c:db, Protocol: 34525
+2023-09-06 10:42:17,004 - INFO - UDP Segment: Source Port: 53, Destination Port: 52894
+2023-09-06 10:42:17,004 - INFO - IPv6 Packet: Version: 6, Traffic Class: 0, Flow Label: 135696, Payload Length: 57, Next Header: 17, Hop Limit: 64, Source: fe80::fe12:63ff:feaa:4cdb, Target: fe80::cc6a:323:234f:c157
+2023-09-06 10:42:17,033 - INFO - Ethernet Frame: Destination: 40:1c:83:fd:1a:5b, Source: fc:12:63:aa:4c:db, Protocol: 34525
+2023-09-06 10:42:17,033 - INFO - UDP Segment: Source Port: 53, Destination Port: 55920
+2023-09-06 10:42:17,033 - INFO - IPv6 Packet: Version: 6, Traffic Class: 0, Flow Label: 423813, Payload Length: 101, Next Header: 17, Hop Limit: 64, Source: fe80::fe12:63ff:feaa:4cdb, Target: fe80::cc6a:323:234f:c157
+2023-09-06 10:42:17,039 - INFO - Ethernet Frame: Destination: fc:12:63:aa:4c:db, Source: 40:1c:83:fd:1a:5b, Protocol: 2048
+2023-09-06 10:42:17,040 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 128, Protocol: 6, Source: 192.168.0.93, Target: 23.29.105.232
+2023-09-06 10:42:17,041 - INFO - TCP Segment: Source Port: 49887, Destination Port: 80
+2023-09-06 10:42:17,043 - INFO - Ethernet Frame: Destination: 40:1c:83:fd:1a:5b, Source: fc:12:63:aa:4c:db, Protocol: 34525
+2023-09-06 10:42:17,043 - INFO - TCP Segment: Source Port: 443, Destination Port: 49768
+2023-09-06 10:42:17,043 - INFO - IPv6 Packet: Version: 6, Traffic Class: 0, Flow Label: 146045, Payload Length: 20, Next Header: 6, Hop Limit: 54, Source: 2607:f8b0:400a:800::200e, Target: 2600:100f:a005:c23:44eb:22cb:903f:2b80
+2023-09-06 10:42:17,043 - INFO - Ethernet Frame: Destination: 40:1c:83:fd:1a:5b, Source: fc:12:63:aa:4c:db, Protocol: 34525
+2023-09-06 10:42:17,043 - INFO - TCP Segment: Source Port: 443, Destination Port: 49768
+2023-09-06 10:42:17,044 - INFO - IPv6 Packet: Version: 6, Traffic Class: 0, Flow Label: 146045, Payload Length: 661, Next Header: 6, Hop Limit: 54, Source: 2607:f8b0:400a:800::200e, Target: 2600:100f:a005:c23:44eb:22cb:903f:2b80
+2023-09-06 10:42:17,044 - INFO - Ethernet Frame: Destination: fc:12:63:aa:4c:db, Source: 40:1c:83:fd:1a:5b, Protocol: 34525
+2023-09-06 10:42:17,044 - INFO - TCP Segment: Source Port: 49770, Destination Port: 443
+2023-09-06 10:42:17,044 - INFO - IPv6 Packet: Version: 6, Traffic Class: 0, Flow Label: 696623, Payload Length: 142, Next Header: 6, Hop Limit: 64, Source: 2600:100f:a005:c23:44eb:22cb:903f:2b80, Target: 2607:f8b0:400a:804::2004
+2023-09-06 10:42:17,077 - INFO - Ethernet Frame: Destination: 40:1c:83:fd:1a:5b, Source: fc:12:63:aa:4c:db, Protocol: 34525
+2023-09-06 10:42:17,077 - INFO - TCP Segment: Source Port: 443, Destination Port: 49770
+2023-09-06 10:42:17,077 - INFO - IPv6 Packet: Version: 6, Traffic Class: 128, Flow Label: 673293, Payload Length: 20, Next Header: 6, Hop Limit: 118, Source: 2607:f8b0:400a:804::2004, Target: 2600:100f:a005:c23:44eb:22cb:903f:2b80
+2023-09-06 10:42:17,091 - INFO - Ethernet Frame: Destination: 40:1c:83:fd:1a:5b, Source: fc:12:63:aa:4c:db, Protocol: 34525
+2023-09-06 10:42:17,091 - INFO - TCP Segment: Source Port: 443, Destination Port: 49770
+2023-09-06 10:42:17,091 - INFO - IPv6 Packet: Version: 6, Traffic Class: 128, Flow Label: 673293, Payload Length: 1230, Next Header: 6, Hop Limit: 118, Source: 2607:f8b0:400a:804::2004, Target: 2600:100f:a005:c23:44eb:22cb:903f:2b80
+2023-09-06 10:42:17,092 - INFO - Ethernet Frame: Destination: fc:12:63:aa:4c:db, Source: 40:1c:83:fd:1a:5b, Protocol: 34525
+2023-09-06 10:42:17,092 - INFO - TCP Segment: Source Port: 49768, Destination Port: 443
+2023-09-06 10:42:17,093 - INFO - IPv6 Packet: Version: 6, Traffic Class: 0, Flow Label: 56829, Payload Length: 20, Next Header: 6, Hop Limit: 64, Source: 2600:100f:a005:c23:44eb:22cb:903f:2b80, Target: 2607:f8b0:400a:800::200e
+2023-09-06 10:42:17,135 - INFO - Ethernet Frame: Destination: 40:1c:83:fd:1a:5b, Source: fc:12:63:aa:4c:db, Protocol: 2048
+2023-09-06 10:42:17,135 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 242, Protocol: 6, Source: 23.29.105.232, Target: 192.168.0.93
+2023-09-06 10:42:17,135 - INFO - TCP Segment: Source Port: 80, Destination Port: 49887
+2023-09-06 10:42:17,143 - INFO - Ethernet Frame: Destination: fc:12:63:aa:4c:db, Source: 40:1c:83:fd:1a:5b, Protocol: 2048
+2023-09-06 10:42:17,143 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 128, Protocol: 6, Source: 192.168.0.93, Target: 23.29.105.232
+2023-09-06 10:42:17,143 - INFO - TCP Segment: Source Port: 49887, Destination Port: 80
+2023-09-06 10:42:17,147 - INFO - Ethernet Frame: Destination: fc:12:63:aa:4c:db, Source: 40:1c:83:fd:1a:5b, Protocol: 2048
+2023-09-06 10:42:17,147 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 128, Protocol: 6, Source: 192.168.0.93, Target: 23.29.105.232
+2023-09-06 10:42:17,148 - INFO - TCP Segment: Source Port: 49887, Destination Port: 80
+2023-09-06 10:42:17,231 - INFO - Ethernet Frame: Destination: fc:12:63:aa:4c:db, Source: 40:1c:83:fd:1a:5b, Protocol: 34525
+2023-09-06 10:42:17,244 - INFO - TCP Segment: Source Port: 49770, Destination Port: 443
+2023-09-06 10:42:17,245 - INFO - IPv6 Packet: Version: 6, Traffic Class: 0, Flow Label: 696623, Payload Length: 20, Next Header: 6, Hop Limit: 64, Source: 2600:100f:a005:c23:44eb:22cb:903f:2b80, Target: 2607:f8b0:400a:804::2004
+2023-09-06 10:42:17,247 - INFO - Ethernet Frame: Destination: 40:1c:83:fd:1a:5b, Source: fc:12:63:aa:4c:db, Protocol: 2048
+2023-09-06 10:42:17,247 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 242, Protocol: 6, Source: 23.29.105.232, Target: 192.168.0.93
+2023-09-06 10:42:17,250 - INFO - TCP Segment: Source Port: 80, Destination Port: 49887
+2023-09-06 10:42:17,548 - INFO - Ethernet Frame: Destination: fc:12:63:aa:4c:db, Source: 40:1c:83:fd:1a:5b, Protocol: 2048
+2023-09-06 10:42:17,548 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 128, Protocol: 6, Source: 192.168.0.93, Target: 23.29.105.232
+2023-09-06 10:42:17,551 - INFO - TCP Segment: Source Port: 49887, Destination Port: 80
+2023-09-06 10:42:17,552 - INFO - Ethernet Frame: Destination: fc:12:63:aa:4c:db, Source: 40:1c:83:fd:1a:5b, Protocol: 2048
+2023-09-06 10:42:17,552 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 128, Protocol: 6, Source: 192.168.0.93, Target: 23.29.105.232
+2023-09-06 10:42:17,552 - INFO - TCP Segment: Source Port: 49887, Destination Port: 80
+2023-09-06 10:42:17,553 - INFO - Ethernet Frame: Destination: fc:12:63:aa:4c:db, Source: 40:1c:83:fd:1a:5b, Protocol: 2048
+2023-09-06 10:42:17,553 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 128, Protocol: 6, Source: 192.168.0.93, Target: 23.29.105.232
+2023-09-06 10:42:17,554 - INFO - TCP Segment: Source Port: 49887, Destination Port: 80
+2023-09-06 10:42:17,695 - INFO - Ethernet Frame: Destination: fc:12:63:aa:4c:db, Source: 40:1c:83:fd:1a:5b, Protocol: 2048
+2023-09-06 10:42:17,695 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 128, Protocol: 6, Source: 192.168.0.93, Target: 13.107.5.93
+2023-09-06 10:42:17,695 - INFO - TCP Segment: Source Port: 49738, Destination Port: 443
+2023-09-06 10:42:17,741 - INFO - Ethernet Frame: Destination: 40:1c:83:fd:1a:5b, Source: fc:12:63:aa:4c:db, Protocol: 2048
+2023-09-06 10:42:17,742 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 111, Protocol: 6, Source: 13.107.5.93, Target: 192.168.0.93
+2023-09-06 10:42:17,742 - INFO - TCP Segment: Source Port: 443, Destination Port: 49738
+2023-09-06 10:42:17,959 - INFO - Ethernet Frame: Destination: fc:12:63:aa:4c:db, Source: 40:1c:83:fd:1a:5b, Protocol: 34525
+2023-09-06 10:42:17,959 - INFO - UDP Segment: Source Port: 59156, Destination Port: 53
+2023-09-06 10:42:17,965 - INFO - IPv6 Packet: Version: 6, Traffic Class: 0, Flow Label: 314325, Payload Length: 40, Next Header: 17, Hop Limit: 64, Source: fe80::cc6a:323:234f:c157, Target: fe80::fe12:63ff:feaa:4cdb
+2023-09-06 10:42:17,967 - INFO - Ethernet Frame: Destination: fc:12:63:aa:4c:db, Source: 40:1c:83:fd:1a:5b, Protocol: 34525
+2023-09-06 10:42:17,967 - INFO - UDP Segment: Source Port: 56356, Destination Port: 53
+2023-09-06 10:42:17,967 - INFO - IPv6 Packet: Version: 6, Traffic Class: 0, Flow Label: 146125, Payload Length: 40, Next Header: 17, Hop Limit: 64, Source: fe80::cc6a:323:234f:c157, Target: fe80::fe12:63ff:feaa:4cdb
+2023-09-06 10:42:17,998 - INFO - Ethernet Frame: Destination: 40:1c:83:fd:1a:5b, Source: fc:12:63:aa:4c:db, Protocol: 34525
+2023-09-06 10:42:17,998 - INFO - UDP Segment: Source Port: 53, Destination Port: 59156
+2023-09-06 10:42:17,998 - INFO - IPv6 Packet: Version: 6, Traffic Class: 0, Flow Label: 976788, Payload Length: 108, Next Header: 17, Hop Limit: 64, Source: fe80::fe12:63ff:feaa:4cdb, Target: fe80::cc6a:323:234f:c157
+2023-09-06 10:42:18,157 - INFO - Ethernet Frame: Destination: 40:1c:83:fd:1a:5b, Source: fc:12:63:aa:4c:db, Protocol: 34525
+2023-09-06 10:42:18,158 - INFO - UDP Segment: Source Port: 53, Destination Port: 56356
+2023-09-06 10:42:18,159 - INFO - IPv6 Packet: Version: 6, Traffic Class: 0, Flow Label: 719745, Payload Length: 108, Next Header: 17, Hop Limit: 64, Source: fe80::fe12:63ff:feaa:4cdb, Target: fe80::cc6a:323:234f:c157
+2023-09-06 10:42:18,160 - INFO - Ethernet Frame: Destination: fc:12:63:aa:4c:db, Source: 40:1c:83:fd:1a:5b, Protocol: 2048
+2023-09-06 10:42:18,160 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 128, Protocol: 6, Source: 192.168.0.93, Target: 23.29.105.232
+2023-09-06 10:42:18,160 - INFO - TCP Segment: Source Port: 49887, Destination Port: 80
+2023-09-06 10:42:18,314 - INFO - Ethernet Frame: Destination: 40:1c:83:fd:1a:5b, Source: fc:12:63:aa:4c:db, Protocol: 2048
+2023-09-06 10:42:18,314 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 242, Protocol: 6, Source: 23.29.105.232, Target: 192.168.0.93
+2023-09-06 10:42:18,326 - INFO - TCP Segment: Source Port: 80, Destination Port: 49887
+2023-09-06 10:42:18,736 - INFO - Ethernet Frame: Destination: 40:1c:83:fd:1a:5b, Source: fc:12:63:aa:4c:db, Protocol: 34525
+2023-09-06 10:42:18,736 - INFO - TCP Segment: Source Port: 443, Destination Port: 49720
+2023-09-06 10:42:18,737 - INFO - IPv6 Packet: Version: 6, Traffic Class: 0, Flow Label: 28609, Payload Length: 20, Next Header: 6, Hop Limit: 50, Source: 2620:1ec:42::132, Target: 2600:100f:a005:c23:44eb:22cb:903f:2b80
+2023-09-06 10:42:18,846 - INFO - Ethernet Frame: Destination: fc:12:63:aa:4c:db, Source: 40:1c:83:fd:1a:5b, Protocol: 2048
+2023-09-06 10:42:18,852 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 128, Protocol: 6, Source: 192.168.0.93, Target: 52.182.141.63
+2023-09-06 10:42:18,852 - INFO - TCP Segment: Source Port: 49741, Destination Port: 443
+2023-09-06 10:42:18,855 - INFO - Ethernet Frame: Destination: fc:12:63:aa:4c:db, Source: 40:1c:83:fd:1a:5b, Protocol: 2048
+2023-09-06 10:42:18,855 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 128, Protocol: 6, Source: 192.168.0.93, Target: 52.182.141.63
+2023-09-06 10:42:18,857 - INFO - TCP Segment: Source Port: 49741, Destination Port: 443
+2023-09-06 10:42:18,956 - INFO - Ethernet Frame: Destination: fc:12:63:aa:4c:db, Source: 40:1c:83:fd:1a:5b, Protocol: 2048
+2023-09-06 10:42:18,956 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 128, Protocol: 6, Source: 192.168.0.93, Target: 52.182.141.63
+2023-09-06 10:42:18,956 - INFO - TCP Segment: Source Port: 49741, Destination Port: 443
+2023-09-06 10:42:18,956 - INFO - Ethernet Frame: Destination: fc:12:63:aa:4c:db, Source: 40:1c:83:fd:1a:5b, Protocol: 34525
+2023-09-06 10:42:18,956 - INFO - UDP Segment: Source Port: 62600, Destination Port: 53
+2023-09-06 10:42:18,956 - INFO - IPv6 Packet: Version: 6, Traffic Class: 0, Flow Label: 1036816, Payload Length: 69, Next Header: 17, Hop Limit: 64, Source: fe80::cc6a:323:234f:c157, Target: fe80::fe12:63ff:feaa:4cdb
+2023-09-06 10:42:18,961 - INFO - Ethernet Frame: Destination: fc:12:63:aa:4c:db, Source: 40:1c:83:fd:1a:5b, Protocol: 34525
+2023-09-06 10:42:18,961 - INFO - UDP Segment: Source Port: 56767, Destination Port: 53
+2023-09-06 10:42:18,961 - INFO - IPv6 Packet: Version: 6, Traffic Class: 0, Flow Label: 272563, Payload Length: 69, Next Header: 17, Hop Limit: 64, Source: fe80::cc6a:323:234f:c157, Target: fe80::fe12:63ff:feaa:4cdb
+2023-09-06 10:42:18,962 - INFO - Ethernet Frame: Destination: 40:1c:83:fd:1a:5b, Source: fc:12:63:aa:4c:db, Protocol: 2048
+2023-09-06 10:42:18,963 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 112, Protocol: 6, Source: 52.182.141.63, Target: 192.168.0.93
+2023-09-06 10:42:18,963 - INFO - TCP Segment: Source Port: 443, Destination Port: 49741
+2023-09-06 10:42:18,967 - INFO - Ethernet Frame: Destination: 40:1c:83:fd:1a:5b, Source: fc:12:63:aa:4c:db, Protocol: 2048
+2023-09-06 10:42:18,967 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 112, Protocol: 6, Source: 52.182.141.63, Target: 192.168.0.93
+2023-09-06 10:42:18,967 - INFO - TCP Segment: Source Port: 443, Destination Port: 49741
+2023-09-06 10:42:18,970 - INFO - Ethernet Frame: Destination: 40:1c:83:fd:1a:5b, Source: fc:12:63:aa:4c:db, Protocol: 2048
+2023-09-06 10:42:18,970 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 112, Protocol: 6, Source: 52.182.141.63, Target: 192.168.0.93
+2023-09-06 10:42:18,971 - INFO - TCP Segment: Source Port: 443, Destination Port: 49741
+2023-09-06 10:42:18,971 - INFO - Ethernet Frame: Destination: 40:1c:83:fd:1a:5b, Source: fc:12:63:aa:4c:db, Protocol: 2048
+2023-09-06 10:42:18,971 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 112, Protocol: 6, Source: 52.182.141.63, Target: 192.168.0.93
+2023-09-06 10:42:18,975 - INFO - TCP Segment: Source Port: 443, Destination Port: 49741
+2023-09-06 10:42:18,976 - INFO - Ethernet Frame: Destination: 40:1c:83:fd:1a:5b, Source: fc:12:63:aa:4c:db, Protocol: 2048
+2023-09-06 10:42:18,976 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 112, Protocol: 6, Source: 52.182.141.63, Target: 192.168.0.93
+2023-09-06 10:42:18,976 - INFO - TCP Segment: Source Port: 443, Destination Port: 49741
+2023-09-06 10:42:18,983 - INFO - Ethernet Frame: Destination: 40:1c:83:fd:1a:5b, Source: fc:12:63:aa:4c:db, Protocol: 2048
+2023-09-06 10:42:18,983 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 112, Protocol: 6, Source: 52.182.141.63, Target: 192.168.0.93
+2023-09-06 10:42:18,984 - INFO - TCP Segment: Source Port: 443, Destination Port: 49741
+2023-09-06 10:42:18,984 - INFO - Ethernet Frame: Destination: 40:1c:83:fd:1a:5b, Source: fc:12:63:aa:4c:db, Protocol: 2048
+2023-09-06 10:42:18,984 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 112, Protocol: 6, Source: 52.182.141.63, Target: 192.168.0.93
+2023-09-06 10:42:18,985 - INFO - TCP Segment: Source Port: 443, Destination Port: 49741
+2023-09-06 10:42:18,986 - INFO - Ethernet Frame: Destination: 40:1c:83:fd:1a:5b, Source: fc:12:63:aa:4c:db, Protocol: 2048
+2023-09-06 10:42:18,986 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 112, Protocol: 6, Source: 52.182.141.63, Target: 192.168.0.93
+2023-09-06 10:42:18,987 - INFO - TCP Segment: Source Port: 443, Destination Port: 49741
+2023-09-06 10:42:18,988 - INFO - Ethernet Frame: Destination: 40:1c:83:fd:1a:5b, Source: fc:12:63:aa:4c:db, Protocol: 2048
+2023-09-06 10:42:18,988 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 112, Protocol: 6, Source: 52.182.141.63, Target: 192.168.0.93
+2023-09-06 10:42:18,989 - INFO - TCP Segment: Source Port: 443, Destination Port: 49741
+2023-09-06 10:42:18,989 - INFO - Ethernet Frame: Destination: 40:1c:83:fd:1a:5b, Source: fc:12:63:aa:4c:db, Protocol: 2048
+2023-09-06 10:42:18,989 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 112, Protocol: 6, Source: 52.182.141.63, Target: 192.168.0.93
+2023-09-06 10:42:18,990 - INFO - TCP Segment: Source Port: 443, Destination Port: 49741
+2023-09-06 10:42:18,991 - INFO - Ethernet Frame: Destination: 40:1c:83:fd:1a:5b, Source: fc:12:63:aa:4c:db, Protocol: 2048
+2023-09-06 10:42:18,991 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 112, Protocol: 6, Source: 52.182.141.63, Target: 192.168.0.93
+2023-09-06 10:42:18,991 - INFO - TCP Segment: Source Port: 443, Destination Port: 49741
+2023-09-06 10:42:18,992 - INFO - Ethernet Frame: Destination: 40:1c:83:fd:1a:5b, Source: fc:12:63:aa:4c:db, Protocol: 2048
+2023-09-06 10:42:18,992 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 112, Protocol: 6, Source: 52.182.141.63, Target: 192.168.0.93
+2023-09-06 10:42:18,992 - INFO - TCP Segment: Source Port: 443, Destination Port: 49741
+2023-09-06 10:42:18,993 - INFO - Ethernet Frame: Destination: 40:1c:83:fd:1a:5b, Source: fc:12:63:aa:4c:db, Protocol: 2048
+2023-09-06 10:42:18,993 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 112, Protocol: 6, Source: 52.182.141.63, Target: 192.168.0.93
+2023-09-06 10:42:18,994 - INFO - TCP Segment: Source Port: 443, Destination Port: 49741
+2023-09-06 10:42:18,995 - INFO - Ethernet Frame: Destination: 40:1c:83:fd:1a:5b, Source: fc:12:63:aa:4c:db, Protocol: 2048
+2023-09-06 10:42:18,995 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 112, Protocol: 6, Source: 52.182.141.63, Target: 192.168.0.93
+2023-09-06 10:42:18,995 - INFO - TCP Segment: Source Port: 443, Destination Port: 49741
+2023-09-06 10:42:18,996 - INFO - Ethernet Frame: Destination: 40:1c:83:fd:1a:5b, Source: fc:12:63:aa:4c:db, Protocol: 2048
+2023-09-06 10:42:18,996 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 112, Protocol: 6, Source: 52.182.141.63, Target: 192.168.0.93
+2023-09-06 10:42:18,997 - INFO - TCP Segment: Source Port: 443, Destination Port: 49741
+2023-09-06 10:42:18,998 - INFO - Ethernet Frame: Destination: 40:1c:83:fd:1a:5b, Source: fc:12:63:aa:4c:db, Protocol: 2048
+2023-09-06 10:42:18,998 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 112, Protocol: 6, Source: 52.182.141.63, Target: 192.168.0.93
+2023-09-06 10:42:18,998 - INFO - TCP Segment: Source Port: 443, Destination Port: 49741
+2023-09-06 10:42:18,999 - INFO - Ethernet Frame: Destination: fc:12:63:aa:4c:db, Source: 40:1c:83:fd:1a:5b, Protocol: 2048
+2023-09-06 10:42:18,999 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 128, Protocol: 6, Source: 192.168.0.93, Target: 52.182.141.63
+2023-09-06 10:42:19,000 - INFO - TCP Segment: Source Port: 49741, Destination Port: 443
+2023-09-06 10:42:19,000 - INFO - Ethernet Frame: Destination: 40:1c:83:fd:1a:5b, Source: fc:12:63:aa:4c:db, Protocol: 2048
+2023-09-06 10:42:19,000 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 112, Protocol: 6, Source: 52.182.141.63, Target: 192.168.0.93
+2023-09-06 10:42:19,000 - INFO - TCP Segment: Source Port: 443, Destination Port: 49741
+2023-09-06 10:42:19,012 - INFO - Ethernet Frame: Destination: 40:1c:83:fd:1a:5b, Source: fc:12:63:aa:4c:db, Protocol: 2048
+2023-09-06 10:42:19,012 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 112, Protocol: 6, Source: 52.182.141.63, Target: 192.168.0.93
+2023-09-06 10:42:19,013 - INFO - TCP Segment: Source Port: 443, Destination Port: 49741
+2023-09-06 10:42:19,014 - INFO - Ethernet Frame: Destination: fc:12:63:aa:4c:db, Source: 40:1c:83:fd:1a:5b, Protocol: 2048
+2023-09-06 10:42:19,014 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 128, Protocol: 6, Source: 192.168.0.93, Target: 52.182.141.63
+2023-09-06 10:42:19,015 - INFO - TCP Segment: Source Port: 49741, Destination Port: 443
+2023-09-06 10:42:19,016 - INFO - Ethernet Frame: Destination: 40:1c:83:fd:1a:5b, Source: fc:12:63:aa:4c:db, Protocol: 34525
+2023-09-06 10:42:19,017 - INFO - UDP Segment: Source Port: 53, Destination Port: 62600
+2023-09-06 10:42:19,017 - INFO - IPv6 Packet: Version: 6, Traffic Class: 0, Flow Label: 794675, Payload Length: 120, Next Header: 17, Hop Limit: 64, Source: fe80::fe12:63ff:feaa:4cdb, Target: fe80::cc6a:323:234f:c157
+2023-09-06 10:42:19,018 - INFO - Ethernet Frame: Destination: fc:12:63:aa:4c:db, Source: 40:1c:83:fd:1a:5b, Protocol: 2048
+2023-09-06 10:42:19,018 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 128, Protocol: 6, Source: 192.168.0.93, Target: 52.182.141.63
+2023-09-06 10:42:19,018 - INFO - TCP Segment: Source Port: 49741, Destination Port: 443
+2023-09-06 10:42:19,019 - INFO - Ethernet Frame: Destination: fc:12:63:aa:4c:db, Source: 40:1c:83:fd:1a:5b, Protocol: 34525
+2023-09-06 10:42:19,019 - INFO - TCP Segment: Source Port: 49768, Destination Port: 443
+2023-09-06 10:42:19,019 - INFO - IPv6 Packet: Version: 6, Traffic Class: 0, Flow Label: 56829, Payload Length: 138, Next Header: 6, Hop Limit: 64, Source: 2600:100f:a005:c23:44eb:22cb:903f:2b80, Target: 2607:f8b0:400a:800::200e
+2023-09-06 10:42:19,021 - INFO - Ethernet Frame: Destination: fc:12:63:aa:4c:db, Source: 40:1c:83:fd:1a:5b, Protocol: 34525
+2023-09-06 10:42:19,021 - INFO - UDP Segment: Source Port: 64481, Destination Port: 53
+2023-09-06 10:42:19,021 - INFO - IPv6 Packet: Version: 6, Traffic Class: 0, Flow Label: 159845, Payload Length: 41, Next Header: 17, Hop Limit: 64, Source: fe80::cc6a:323:234f:c157, Target: fe80::fe12:63ff:feaa:4cdb
+2023-09-06 10:42:19,022 - INFO - Ethernet Frame: Destination: fc:12:63:aa:4c:db, Source: 40:1c:83:fd:1a:5b, Protocol: 34525
+2023-09-06 10:42:19,022 - INFO - UDP Segment: Source Port: 52898, Destination Port: 53
+2023-09-06 10:42:19,023 - INFO - IPv6 Packet: Version: 6, Traffic Class: 0, Flow Label: 367227, Payload Length: 41, Next Header: 17, Hop Limit: 64, Source: fe80::cc6a:323:234f:c157, Target: fe80::fe12:63ff:feaa:4cdb
+2023-09-06 10:42:19,024 - INFO - Ethernet Frame: Destination: 40:1c:83:fd:1a:5b, Source: fc:12:63:aa:4c:db, Protocol: 34525
+2023-09-06 10:42:19,025 - INFO - UDP Segment: Source Port: 53, Destination Port: 64481
+2023-09-06 10:42:19,025 - INFO - IPv6 Packet: Version: 6, Traffic Class: 0, Flow Label: 1012296, Payload Length: 57, Next Header: 17, Hop Limit: 64, Source: fe80::fe12:63ff:feaa:4cdb, Target: fe80::cc6a:323:234f:c157
+2023-09-06 10:42:19,026 - INFO - Ethernet Frame: Destination: 40:1c:83:fd:1a:5b, Source: fc:12:63:aa:4c:db, Protocol: 34525
+2023-09-06 10:42:19,027 - INFO - UDP Segment: Source Port: 53, Destination Port: 56767
+2023-09-06 10:42:19,027 - INFO - IPv6 Packet: Version: 6, Traffic Class: 0, Flow Label: 94013, Payload Length: 120, Next Header: 17, Hop Limit: 64, Source: fe80::fe12:63ff:feaa:4cdb, Target: fe80::cc6a:323:234f:c157
+2023-09-06 10:42:19,040 - INFO - Ethernet Frame: Destination: 40:1c:83:fd:1a:5b, Source: fc:12:63:aa:4c:db, Protocol: 34525
+2023-09-06 10:42:19,040 - INFO - TCP Segment: Source Port: 443, Destination Port: 49768
+2023-09-06 10:42:19,040 - INFO - IPv6 Packet: Version: 6, Traffic Class: 0, Flow Label: 146045, Payload Length: 20, Next Header: 6, Hop Limit: 54, Source: 2607:f8b0:400a:800::200e, Target: 2600:100f:a005:c23:44eb:22cb:903f:2b80
+2023-09-06 10:42:19,049 - INFO - Ethernet Frame: Destination: 40:1c:83:fd:1a:5b, Source: fc:12:63:aa:4c:db, Protocol: 34525
+2023-09-06 10:42:19,049 - INFO - TCP Segment: Source Port: 443, Destination Port: 49768
+2023-09-06 10:42:19,050 - INFO - IPv6 Packet: Version: 6, Traffic Class: 0, Flow Label: 146045, Payload Length: 661, Next Header: 6, Hop Limit: 54, Source: 2607:f8b0:400a:800::200e, Target: 2600:100f:a005:c23:44eb:22cb:903f:2b80
+2023-09-06 10:42:19,051 - INFO - Ethernet Frame: Destination: 40:1c:83:fd:1a:5b, Source: fc:12:63:aa:4c:db, Protocol: 34525
+2023-09-06 10:42:19,051 - INFO - UDP Segment: Source Port: 53, Destination Port: 52898
+2023-09-06 10:42:19,052 - INFO - IPv6 Packet: Version: 6, Traffic Class: 0, Flow Label: 890582, Payload Length: 101, Next Header: 17, Hop Limit: 64, Source: fe80::fe12:63ff:feaa:4cdb, Target: fe80::cc6a:323:234f:c157
+2023-09-06 10:42:19,053 - INFO - Ethernet Frame: Destination: fc:12:63:aa:4c:db, Source: 40:1c:83:fd:1a:5b, Protocol: 2048
+2023-09-06 10:42:19,053 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 128, Protocol: 6, Source: 192.168.0.93, Target: 23.29.105.232
+2023-09-06 10:42:19,054 - INFO - TCP Segment: Source Port: 49888, Destination Port: 80
+2023-09-06 10:42:19,082 - INFO - Ethernet Frame: Destination: fc:12:63:aa:4c:db, Source: 40:1c:83:fd:1a:5b, Protocol: 34525
+2023-09-06 10:42:19,082 - INFO - TCP Segment: Source Port: 49770, Destination Port: 443
+2023-09-06 10:42:19,082 - INFO - IPv6 Packet: Version: 6, Traffic Class: 0, Flow Label: 696623, Payload Length: 142, Next Header: 6, Hop Limit: 64, Source: 2600:100f:a005:c23:44eb:22cb:903f:2b80, Target: 2607:f8b0:400a:804::2004
+2023-09-06 10:42:19,090 - INFO - Ethernet Frame: Destination: 40:1c:83:fd:1a:5b, Source: fc:12:63:aa:4c:db, Protocol: 34525
+2023-09-06 10:42:19,090 - INFO - TCP Segment: Source Port: 443, Destination Port: 49770
+2023-09-06 10:42:19,091 - INFO - IPv6 Packet: Version: 6, Traffic Class: 128, Flow Label: 673293, Payload Length: 20, Next Header: 6, Hop Limit: 118, Source: 2607:f8b0:400a:804::2004, Target: 2600:100f:a005:c23:44eb:22cb:903f:2b80
+2023-09-06 10:42:19,091 - INFO - Ethernet Frame: Destination: fc:12:63:aa:4c:db, Source: 40:1c:83:fd:1a:5b, Protocol: 34525
+2023-09-06 10:42:19,091 - INFO - TCP Segment: Source Port: 49768, Destination Port: 443
+2023-09-06 10:42:19,091 - INFO - IPv6 Packet: Version: 6, Traffic Class: 0, Flow Label: 56829, Payload Length: 20, Next Header: 6, Hop Limit: 64, Source: 2600:100f:a005:c23:44eb:22cb:903f:2b80, Target: 2607:f8b0:400a:800::200e
+2023-09-06 10:42:19,100 - INFO - Ethernet Frame: Destination: 40:1c:83:fd:1a:5b, Source: fc:12:63:aa:4c:db, Protocol: 34525
+2023-09-06 10:42:19,100 - INFO - TCP Segment: Source Port: 443, Destination Port: 49770
+2023-09-06 10:42:19,100 - INFO - IPv6 Packet: Version: 6, Traffic Class: 128, Flow Label: 673293, Payload Length: 1231, Next Header: 6, Hop Limit: 118, Source: 2607:f8b0:400a:804::2004, Target: 2600:100f:a005:c23:44eb:22cb:903f:2b80
+2023-09-06 10:42:19,147 - INFO - Ethernet Frame: Destination: fc:12:63:aa:4c:db, Source: 40:1c:83:fd:1a:5b, Protocol: 34525
+2023-09-06 10:42:19,147 - INFO - TCP Segment: Source Port: 49770, Destination Port: 443
+2023-09-06 10:42:19,148 - INFO - IPv6 Packet: Version: 6, Traffic Class: 0, Flow Label: 696623, Payload Length: 20, Next Header: 6, Hop Limit: 64, Source: 2600:100f:a005:c23:44eb:22cb:903f:2b80, Target: 2607:f8b0:400a:804::2004
+2023-09-06 10:42:19,153 - INFO - Ethernet Frame: Destination: 40:1c:83:fd:1a:5b, Source: fc:12:63:aa:4c:db, Protocol: 2048
+2023-09-06 10:42:19,154 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 242, Protocol: 6, Source: 23.29.105.232, Target: 192.168.0.93
+2023-09-06 10:42:19,184 - INFO - TCP Segment: Source Port: 80, Destination Port: 49888
+2023-09-06 10:42:19,186 - INFO - Ethernet Frame: Destination: fc:12:63:aa:4c:db, Source: 40:1c:83:fd:1a:5b, Protocol: 2048
+2023-09-06 10:42:19,186 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 128, Protocol: 6, Source: 192.168.0.93, Target: 23.29.105.232
+2023-09-06 10:42:19,186 - INFO - TCP Segment: Source Port: 49888, Destination Port: 80
+2023-09-06 10:42:19,189 - INFO - Ethernet Frame: Destination: fc:12:63:aa:4c:db, Source: 40:1c:83:fd:1a:5b, Protocol: 2048
+2023-09-06 10:42:19,190 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 128, Protocol: 6, Source: 192.168.0.93, Target: 23.29.105.232
+2023-09-06 10:42:19,191 - INFO - TCP Segment: Source Port: 49888, Destination Port: 80
+2023-09-06 10:42:19,300 - INFO - Ethernet Frame: Destination: fc:12:63:aa:4c:db, Source: 40:1c:83:fd:1a:5b, Protocol: 2048
+2023-09-06 10:42:19,300 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 128, Protocol: 6, Source: 192.168.0.93, Target: 52.182.141.63
+2023-09-06 10:42:19,302 - INFO - TCP Segment: Source Port: 49741, Destination Port: 443
+2023-09-06 10:42:19,303 - INFO - Ethernet Frame: Destination: fc:12:63:aa:4c:db, Source: 40:1c:83:fd:1a:5b, Protocol: 2048
+2023-09-06 10:42:19,303 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 128, Protocol: 6, Source: 192.168.0.93, Target: 52.176.60.255
+2023-09-06 10:42:19,303 - INFO - TCP Segment: Source Port: 49837, Destination Port: 443
+2023-09-06 10:42:19,304 - INFO - Ethernet Frame: Destination: 40:1c:83:fd:1a:5b, Source: fc:12:63:aa:4c:db, Protocol: 2048
+2023-09-06 10:42:19,304 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 242, Protocol: 6, Source: 23.29.105.232, Target: 192.168.0.93
+2023-09-06 10:42:19,305 - INFO - TCP Segment: Source Port: 80, Destination Port: 49888
+2023-09-06 10:42:19,305 - INFO - Ethernet Frame: Destination: 40:1c:83:fd:1a:5b, Source: fc:12:63:aa:4c:db, Protocol: 2048
+2023-09-06 10:42:19,306 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 112, Protocol: 6, Source: 52.182.141.63, Target: 192.168.0.93
+2023-09-06 10:42:19,306 - INFO - TCP Segment: Source Port: 443, Destination Port: 49741
+2023-09-06 10:42:19,306 - INFO - Ethernet Frame: Destination: fc:12:63:aa:4c:db, Source: 40:1c:83:fd:1a:5b, Protocol: 2048
+2023-09-06 10:42:19,306 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 128, Protocol: 6, Source: 192.168.0.93, Target: 23.29.105.232
+2023-09-06 10:42:19,306 - INFO - TCP Segment: Source Port: 49888, Destination Port: 80
+2023-09-06 10:42:19,307 - INFO - Ethernet Frame: Destination: fc:12:63:aa:4c:db, Source: 40:1c:83:fd:1a:5b, Protocol: 2048
+2023-09-06 10:42:19,308 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 128, Protocol: 6, Source: 192.168.0.93, Target: 23.29.105.232
+2023-09-06 10:42:19,308 - INFO - TCP Segment: Source Port: 49888, Destination Port: 80
+2023-09-06 10:42:19,386 - INFO - Ethernet Frame: Destination: 40:1c:83:fd:1a:5b, Source: fc:12:63:aa:4c:db, Protocol: 2048
+2023-09-06 10:42:19,386 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 241, Protocol: 6, Source: 103.41.69.203, Target: 192.168.0.93
+2023-09-06 10:42:19,389 - INFO - TCP Segment: Source Port: 443, Destination Port: 49836
+2023-09-06 10:42:19,390 - INFO - Ethernet Frame: Destination: fc:12:63:aa:4c:db, Source: 40:1c:83:fd:1a:5b, Protocol: 2048
+2023-09-06 10:42:19,390 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 128, Protocol: 6, Source: 192.168.0.93, Target: 103.41.69.203
+2023-09-06 10:42:19,391 - INFO - TCP Segment: Source Port: 49836, Destination Port: 443
+2023-09-06 10:42:19,392 - INFO - Ethernet Frame: Destination: 40:1c:83:fd:1a:5b, Source: fc:12:63:aa:4c:db, Protocol: 2048
+2023-09-06 10:42:19,394 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 112, Protocol: 6, Source: 52.182.141.63, Target: 192.168.0.93
+2023-09-06 10:42:19,394 - INFO - TCP Segment: Source Port: 443, Destination Port: 49741
+2023-09-06 10:42:19,395 - INFO - Ethernet Frame: Destination: 40:1c:83:fd:1a:5b, Source: fc:12:63:aa:4c:db, Protocol: 2048
+2023-09-06 10:42:19,395 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 242, Protocol: 6, Source: 23.29.105.232, Target: 192.168.0.93
+2023-09-06 10:42:19,400 - INFO - TCP Segment: Source Port: 80, Destination Port: 49888
+2023-09-06 10:42:19,438 - INFO - Ethernet Frame: Destination: 40:1c:83:fd:1a:5b, Source: fc:12:63:aa:4c:db, Protocol: 2048
+2023-09-06 10:42:19,438 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 111, Protocol: 6, Source: 52.176.60.255, Target: 192.168.0.93
+2023-09-06 10:42:19,441 - INFO - TCP Segment: Source Port: 443, Destination Port: 49837
+2023-09-06 10:42:20,479 - INFO - Ethernet Frame: Destination: 40:1c:83:fd:1a:5b, Source: fc:12:63:aa:4c:db, Protocol: 2048
+2023-09-06 10:42:20,479 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 114, Protocol: 6, Source: 13.107.42.12, Target: 192.168.0.93
+2023-09-06 10:42:20,481 - INFO - TCP Segment: Source Port: 443, Destination Port: 49731
+2023-09-06 10:42:20,901 - INFO - Ethernet Frame: Destination: fc:12:63:aa:4c:db, Source: 40:1c:83:fd:1a:5b, Protocol: 2048
+2023-09-06 10:42:20,901 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 128, Protocol: 6, Source: 192.168.0.93, Target: 52.182.141.63
+2023-09-06 10:42:20,905 - INFO - TCP Segment: Source Port: 49741, Destination Port: 443
+2023-09-06 10:42:20,906 - INFO - Ethernet Frame: Destination: fc:12:63:aa:4c:db, Source: 40:1c:83:fd:1a:5b, Protocol: 2048
+2023-09-06 10:42:20,906 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 128, Protocol: 6, Source: 192.168.0.93, Target: 52.182.141.63
+2023-09-06 10:42:20,906 - INFO - TCP Segment: Source Port: 49741, Destination Port: 443
+2023-09-06 10:42:20,966 - INFO - Ethernet Frame: Destination: fc:12:63:aa:4c:db, Source: 40:1c:83:fd:1a:5b, Protocol: 34525
+2023-09-06 10:42:20,966 - INFO - UDP Segment: Source Port: 64944, Destination Port: 53
+2023-09-06 10:42:20,969 - INFO - IPv6 Packet: Version: 6, Traffic Class: 0, Flow Label: 113555, Payload Length: 69, Next Header: 17, Hop Limit: 64, Source: fe80::cc6a:323:234f:c157, Target: fe80::fe12:63ff:feaa:4cdb
+2023-09-06 10:42:20,970 - INFO - Ethernet Frame: Destination: fc:12:63:aa:4c:db, Source: 40:1c:83:fd:1a:5b, Protocol: 34525
+2023-09-06 10:42:20,970 - INFO - UDP Segment: Source Port: 58131, Destination Port: 53
+2023-09-06 10:42:20,970 - INFO - IPv6 Packet: Version: 6, Traffic Class: 0, Flow Label: 571818, Payload Length: 69, Next Header: 17, Hop Limit: 64, Source: fe80::cc6a:323:234f:c157, Target: fe80::fe12:63ff:feaa:4cdb
+2023-09-06 10:42:20,989 - INFO - Ethernet Frame: Destination: 40:1c:83:fd:1a:5b, Source: fc:12:63:aa:4c:db, Protocol: 2048
+2023-09-06 10:42:20,989 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 112, Protocol: 6, Source: 52.182.141.63, Target: 192.168.0.93
+2023-09-06 10:42:20,989 - INFO - TCP Segment: Source Port: 443, Destination Port: 49741
+2023-09-06 10:42:20,999 - INFO - Ethernet Frame: Destination: 40:1c:83:fd:1a:5b, Source: fc:12:63:aa:4c:db, Protocol: 2048
+2023-09-06 10:42:21,000 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 112, Protocol: 6, Source: 52.182.141.63, Target: 192.168.0.93
+2023-09-06 10:42:21,001 - INFO - TCP Segment: Source Port: 443, Destination Port: 49741
+2023-09-06 10:42:21,005 - INFO - Ethernet Frame: Destination: 40:1c:83:fd:1a:5b, Source: fc:12:63:aa:4c:db, Protocol: 2048
+2023-09-06 10:42:21,005 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 112, Protocol: 6, Source: 52.182.141.63, Target: 192.168.0.93
+2023-09-06 10:42:21,005 - INFO - TCP Segment: Source Port: 443, Destination Port: 49741
+2023-09-06 10:42:21,006 - INFO - Ethernet Frame: Destination: 40:1c:83:fd:1a:5b, Source: fc:12:63:aa:4c:db, Protocol: 34525
+2023-09-06 10:42:21,007 - INFO - UDP Segment: Source Port: 53, Destination Port: 64944
+2023-09-06 10:42:21,007 - INFO - IPv6 Packet: Version: 6, Traffic Class: 0, Flow Label: 243841, Payload Length: 120, Next Header: 17, Hop Limit: 64, Source: fe80::fe12:63ff:feaa:4cdb, Target: fe80::cc6a:323:234f:c157
+2023-09-06 10:42:21,010 - INFO - Ethernet Frame: Destination: fc:12:63:aa:4c:db, Source: 40:1c:83:fd:1a:5b, Protocol: 34525
+2023-09-06 10:42:21,010 - INFO - TCP Segment: Source Port: 49768, Destination Port: 443
+2023-09-06 10:42:21,010 - INFO - IPv6 Packet: Version: 6, Traffic Class: 0, Flow Label: 56829, Payload Length: 138, Next Header: 6, Hop Limit: 64, Source: 2600:100f:a005:c23:44eb:22cb:903f:2b80, Target: 2607:f8b0:400a:800::200e
+2023-09-06 10:42:21,010 - INFO - Ethernet Frame: Destination: 40:1c:83:fd:1a:5b, Source: fc:12:63:aa:4c:db, Protocol: 2048
+2023-09-06 10:42:21,010 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 112, Protocol: 6, Source: 52.182.141.63, Target: 192.168.0.93
+2023-09-06 10:42:21,013 - INFO - TCP Segment: Source Port: 443, Destination Port: 49741
+2023-09-06 10:42:21,014 - INFO - Ethernet Frame: Destination: 40:1c:83:fd:1a:5b, Source: fc:12:63:aa:4c:db, Protocol: 2048
+2023-09-06 10:42:21,015 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 112, Protocol: 6, Source: 52.182.141.63, Target: 192.168.0.93
+2023-09-06 10:42:21,015 - INFO - TCP Segment: Source Port: 443, Destination Port: 49741
+2023-09-06 10:42:21,016 - INFO - Ethernet Frame: Destination: 40:1c:83:fd:1a:5b, Source: fc:12:63:aa:4c:db, Protocol: 2048
+2023-09-06 10:42:21,016 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 112, Protocol: 6, Source: 52.182.141.63, Target: 192.168.0.93
+2023-09-06 10:42:21,017 - INFO - TCP Segment: Source Port: 443, Destination Port: 49741
+2023-09-06 10:42:21,017 - INFO - Ethernet Frame: Destination: 40:1c:83:fd:1a:5b, Source: fc:12:63:aa:4c:db, Protocol: 2048
+2023-09-06 10:42:21,017 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 112, Protocol: 6, Source: 52.182.141.63, Target: 192.168.0.93
+2023-09-06 10:42:21,017 - INFO - TCP Segment: Source Port: 443, Destination Port: 49741
+2023-09-06 10:42:21,017 - INFO - Ethernet Frame: Destination: 40:1c:83:fd:1a:5b, Source: fc:12:63:aa:4c:db, Protocol: 2048
+2023-09-06 10:42:21,017 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 112, Protocol: 6, Source: 52.182.141.63, Target: 192.168.0.93
+2023-09-06 10:42:21,017 - INFO - TCP Segment: Source Port: 443, Destination Port: 49741
+2023-09-06 10:42:21,020 - INFO - Ethernet Frame: Destination: 40:1c:83:fd:1a:5b, Source: fc:12:63:aa:4c:db, Protocol: 2048
+2023-09-06 10:42:21,020 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 112, Protocol: 6, Source: 52.182.141.63, Target: 192.168.0.93
+2023-09-06 10:42:21,020 - INFO - TCP Segment: Source Port: 443, Destination Port: 49741
+2023-09-06 10:42:21,021 - INFO - Ethernet Frame: Destination: 40:1c:83:fd:1a:5b, Source: fc:12:63:aa:4c:db, Protocol: 2048
+2023-09-06 10:42:21,021 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 112, Protocol: 6, Source: 52.182.141.63, Target: 192.168.0.93
+2023-09-06 10:42:21,022 - INFO - TCP Segment: Source Port: 443, Destination Port: 49741
+2023-09-06 10:42:21,022 - INFO - Ethernet Frame: Destination: 40:1c:83:fd:1a:5b, Source: fc:12:63:aa:4c:db, Protocol: 2048
+2023-09-06 10:42:21,022 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 112, Protocol: 6, Source: 52.182.141.63, Target: 192.168.0.93
+2023-09-06 10:42:21,023 - INFO - TCP Segment: Source Port: 443, Destination Port: 49741
+2023-09-06 10:42:21,023 - INFO - Ethernet Frame: Destination: 40:1c:83:fd:1a:5b, Source: fc:12:63:aa:4c:db, Protocol: 2048
+2023-09-06 10:42:21,023 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 112, Protocol: 6, Source: 52.182.141.63, Target: 192.168.0.93
+2023-09-06 10:42:21,023 - INFO - TCP Segment: Source Port: 443, Destination Port: 49741
+2023-09-06 10:42:21,024 - INFO - Ethernet Frame: Destination: 40:1c:83:fd:1a:5b, Source: fc:12:63:aa:4c:db, Protocol: 2048
+2023-09-06 10:42:21,024 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 112, Protocol: 6, Source: 52.182.141.63, Target: 192.168.0.93
+2023-09-06 10:42:21,024 - INFO - TCP Segment: Source Port: 443, Destination Port: 49741
+2023-09-06 10:42:21,026 - INFO - Ethernet Frame: Destination: 40:1c:83:fd:1a:5b, Source: fc:12:63:aa:4c:db, Protocol: 2048
+2023-09-06 10:42:21,026 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 112, Protocol: 6, Source: 52.182.141.63, Target: 192.168.0.93
+2023-09-06 10:42:21,026 - INFO - TCP Segment: Source Port: 443, Destination Port: 49741
+2023-09-06 10:42:21,028 - INFO - Ethernet Frame: Destination: fc:12:63:aa:4c:db, Source: 40:1c:83:fd:1a:5b, Protocol: 2048
+2023-09-06 10:42:21,028 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 128, Protocol: 6, Source: 192.168.0.93, Target: 52.182.141.63
+2023-09-06 10:42:21,030 - INFO - TCP Segment: Source Port: 49741, Destination Port: 443
+2023-09-06 10:42:21,030 - INFO - Ethernet Frame: Destination: 40:1c:83:fd:1a:5b, Source: fc:12:63:aa:4c:db, Protocol: 34525
+2023-09-06 10:42:21,031 - INFO - UDP Segment: Source Port: 53, Destination Port: 58131
+2023-09-06 10:42:21,032 - INFO - IPv6 Packet: Version: 6, Traffic Class: 0, Flow Label: 874820, Payload Length: 120, Next Header: 17, Hop Limit: 64, Source: fe80::fe12:63ff:feaa:4cdb, Target: fe80::cc6a:323:234f:c157
+2023-09-06 10:42:21,033 - INFO - Ethernet Frame: Destination: fc:12:63:aa:4c:db, Source: 40:1c:83:fd:1a:5b, Protocol: 34525
+2023-09-06 10:42:21,034 - INFO - UDP Segment: Source Port: 56367, Destination Port: 53
+2023-09-06 10:42:21,034 - INFO - IPv6 Packet: Version: 6, Traffic Class: 0, Flow Label: 818571, Payload Length: 41, Next Header: 17, Hop Limit: 64, Source: fe80::cc6a:323:234f:c157, Target: fe80::fe12:63ff:feaa:4cdb
+2023-09-06 10:42:21,043 - INFO - Ethernet Frame: Destination: fc:12:63:aa:4c:db, Source: 40:1c:83:fd:1a:5b, Protocol: 34525
+2023-09-06 10:42:21,043 - INFO - UDP Segment: Source Port: 61856, Destination Port: 53
+2023-09-06 10:42:21,043 - INFO - IPv6 Packet: Version: 6, Traffic Class: 0, Flow Label: 975043, Payload Length: 41, Next Header: 17, Hop Limit: 64, Source: fe80::cc6a:323:234f:c157, Target: fe80::fe12:63ff:feaa:4cdb
+2023-09-06 10:42:21,052 - INFO - Ethernet Frame: Destination: 40:1c:83:fd:1a:5b, Source: fc:12:63:aa:4c:db, Protocol: 34525
+2023-09-06 10:42:21,052 - INFO - UDP Segment: Source Port: 53, Destination Port: 56367
+2023-09-06 10:42:21,053 - INFO - IPv6 Packet: Version: 6, Traffic Class: 0, Flow Label: 505428, Payload Length: 57, Next Header: 17, Hop Limit: 64, Source: fe80::fe12:63ff:feaa:4cdb, Target: fe80::cc6a:323:234f:c157
+2023-09-06 10:42:21,054 - INFO - Ethernet Frame: Destination: 40:1c:83:fd:1a:5b, Source: fc:12:63:aa:4c:db, Protocol: 34525
+2023-09-06 10:42:21,054 - INFO - UDP Segment: Source Port: 53, Destination Port: 61856
+2023-09-06 10:42:21,054 - INFO - IPv6 Packet: Version: 6, Traffic Class: 0, Flow Label: 447854, Payload Length: 101, Next Header: 17, Hop Limit: 64, Source: fe80::fe12:63ff:feaa:4cdb, Target: fe80::cc6a:323:234f:c157
+2023-09-06 10:42:21,056 - INFO - Ethernet Frame: Destination: fc:12:63:aa:4c:db, Source: 40:1c:83:fd:1a:5b, Protocol: 2048
+2023-09-06 10:42:21,056 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 128, Protocol: 6, Source: 192.168.0.93, Target: 23.29.105.232
+2023-09-06 10:42:21,056 - INFO - TCP Segment: Source Port: 49889, Destination Port: 80
+2023-09-06 10:42:21,056 - INFO - Ethernet Frame: Destination: 40:1c:83:fd:1a:5b, Source: fc:12:63:aa:4c:db, Protocol: 34525
+2023-09-06 10:42:21,057 - INFO - TCP Segment: Source Port: 443, Destination Port: 49768
+2023-09-06 10:42:21,057 - INFO - IPv6 Packet: Version: 6, Traffic Class: 0, Flow Label: 146045, Payload Length: 20, Next Header: 6, Hop Limit: 54, Source: 2607:f8b0:400a:800::200e, Target: 2600:100f:a005:c23:44eb:22cb:903f:2b80
+2023-09-06 10:42:21,062 - INFO - Ethernet Frame: Destination: 40:1c:83:fd:1a:5b, Source: fc:12:63:aa:4c:db, Protocol: 34525
+2023-09-06 10:42:21,063 - INFO - TCP Segment: Source Port: 443, Destination Port: 49768
+2023-09-06 10:42:21,064 - INFO - IPv6 Packet: Version: 6, Traffic Class: 0, Flow Label: 146045, Payload Length: 661, Next Header: 6, Hop Limit: 54, Source: 2607:f8b0:400a:800::200e, Target: 2600:100f:a005:c23:44eb:22cb:903f:2b80
+2023-09-06 10:42:21,065 - INFO - Ethernet Frame: Destination: fc:12:63:aa:4c:db, Source: 40:1c:83:fd:1a:5b, Protocol: 34525
+2023-09-06 10:42:21,065 - INFO - TCP Segment: Source Port: 49770, Destination Port: 443
+2023-09-06 10:42:21,066 - INFO - IPv6 Packet: Version: 6, Traffic Class: 0, Flow Label: 696623, Payload Length: 142, Next Header: 6, Hop Limit: 64, Source: 2600:100f:a005:c23:44eb:22cb:903f:2b80, Target: 2607:f8b0:400a:804::2004
+2023-09-06 10:42:21,096 - INFO - Ethernet Frame: Destination: 40:1c:83:fd:1a:5b, Source: fc:12:63:aa:4c:db, Protocol: 34525
+2023-09-06 10:42:21,096 - INFO - TCP Segment: Source Port: 443, Destination Port: 49770
+2023-09-06 10:42:21,100 - INFO - IPv6 Packet: Version: 6, Traffic Class: 128, Flow Label: 673293, Payload Length: 20, Next Header: 6, Hop Limit: 118, Source: 2607:f8b0:400a:804::2004, Target: 2600:100f:a005:c23:44eb:22cb:903f:2b80
+2023-09-06 10:42:21,109 - INFO - Ethernet Frame: Destination: fc:12:63:aa:4c:db, Source: 40:1c:83:fd:1a:5b, Protocol: 34525
+2023-09-06 10:42:21,109 - INFO - TCP Segment: Source Port: 49768, Destination Port: 443
+2023-09-06 10:42:21,110 - INFO - IPv6 Packet: Version: 6, Traffic Class: 0, Flow Label: 56829, Payload Length: 20, Next Header: 6, Hop Limit: 64, Source: 2600:100f:a005:c23:44eb:22cb:903f:2b80, Target: 2607:f8b0:400a:800::200e
+2023-09-06 10:42:21,112 - INFO - Ethernet Frame: Destination: 40:1c:83:fd:1a:5b, Source: fc:12:63:aa:4c:db, Protocol: 34525
+2023-09-06 10:42:21,113 - INFO - TCP Segment: Source Port: 443, Destination Port: 49770
+2023-09-06 10:42:21,113 - INFO - IPv6 Packet: Version: 6, Traffic Class: 128, Flow Label: 673293, Payload Length: 1230, Next Header: 6, Hop Limit: 118, Source: 2607:f8b0:400a:804::2004, Target: 2600:100f:a005:c23:44eb:22cb:903f:2b80
+2023-09-06 10:42:21,147 - INFO - Ethernet Frame: Destination: 40:1c:83:fd:1a:5b, Source: fc:12:63:aa:4c:db, Protocol: 2048
+2023-09-06 10:42:21,147 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 242, Protocol: 6, Source: 23.29.105.232, Target: 192.168.0.93
+2023-09-06 10:42:21,154 - INFO - TCP Segment: Source Port: 80, Destination Port: 49889
+2023-09-06 10:42:21,155 - INFO - Ethernet Frame: Destination: fc:12:63:aa:4c:db, Source: 40:1c:83:fd:1a:5b, Protocol: 2048
+2023-09-06 10:42:21,155 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 128, Protocol: 6, Source: 192.168.0.93, Target: 23.29.105.232
+2023-09-06 10:42:21,155 - INFO - TCP Segment: Source Port: 49889, Destination Port: 80
+2023-09-06 10:42:21,155 - INFO - Ethernet Frame: Destination: fc:12:63:aa:4c:db, Source: 40:1c:83:fd:1a:5b, Protocol: 2048
+2023-09-06 10:42:21,155 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 128, Protocol: 6, Source: 192.168.0.93, Target: 23.29.105.232
+2023-09-06 10:42:21,155 - INFO - TCP Segment: Source Port: 49889, Destination Port: 80
+2023-09-06 10:42:21,297 - INFO - Ethernet Frame: Destination: fc:12:63:aa:4c:db, Source: 40:1c:83:fd:1a:5b, Protocol: 34525
+2023-09-06 10:42:21,297 - INFO - TCP Segment: Source Port: 49770, Destination Port: 443
+2023-09-06 10:42:21,298 - INFO - IPv6 Packet: Version: 6, Traffic Class: 0, Flow Label: 696623, Payload Length: 20, Next Header: 6, Hop Limit: 64, Source: 2600:100f:a005:c23:44eb:22cb:903f:2b80, Target: 2607:f8b0:400a:804::2004
+2023-09-06 10:42:21,299 - INFO - Ethernet Frame: Destination: 40:1c:83:fd:1a:5b, Source: fc:12:63:aa:4c:db, Protocol: 2048
+2023-09-06 10:42:21,299 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 242, Protocol: 6, Source: 23.29.105.232, Target: 192.168.0.93
+2023-09-06 10:42:21,301 - INFO - TCP Segment: Source Port: 80, Destination Port: 49889
+2023-09-06 10:42:21,396 - INFO - Ethernet Frame: Destination: fc:12:63:aa:4c:db, Source: 40:1c:83:fd:1a:5b, Protocol: 2048
+2023-09-06 10:42:21,396 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 128, Protocol: 6, Source: 192.168.0.93, Target: 23.29.105.232
+2023-09-06 10:42:21,400 - INFO - TCP Segment: Source Port: 49889, Destination Port: 80
+2023-09-06 10:42:21,401 - INFO - Ethernet Frame: Destination: fc:12:63:aa:4c:db, Source: 40:1c:83:fd:1a:5b, Protocol: 2048
+2023-09-06 10:42:21,401 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 128, Protocol: 6, Source: 192.168.0.93, Target: 23.29.105.232
+2023-09-06 10:42:21,402 - INFO - TCP Segment: Source Port: 49889, Destination Port: 80
+2023-09-06 10:42:21,403 - INFO - Ethernet Frame: Destination: 40:1c:83:fd:1a:5b, Source: fc:12:63:aa:4c:db, Protocol: 2048
+2023-09-06 10:42:21,403 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 242, Protocol: 6, Source: 23.29.105.232, Target: 192.168.0.93
+2023-09-06 10:42:21,403 - INFO - TCP Segment: Source Port: 80, Destination Port: 49889
+2023-09-06 10:42:21,842 - INFO - Ethernet Frame: Destination: fc:12:63:aa:4c:db, Source: 40:1c:83:fd:1a:5b, Protocol: 34525
+2023-09-06 10:42:21,843 - INFO - TCP Segment: Source Port: 49742, Destination Port: 443
+2023-09-06 10:42:21,844 - INFO - IPv6 Packet: Version: 6, Traffic Class: 0, Flow Label: 990384, Payload Length: 21, Next Header: 6, Hop Limit: 64, Source: 2600:100f:a005:c23:44eb:22cb:903f:2b80, Target: 2620:1ec:a92::175
+2023-09-06 10:42:21,880 - INFO - Ethernet Frame: Destination: 40:1c:83:fd:1a:5b, Source: fc:12:63:aa:4c:db, Protocol: 34525
+2023-09-06 10:42:21,889 - INFO - TCP Segment: Source Port: 443, Destination Port: 49742
+2023-09-06 10:42:21,889 - INFO - IPv6 Packet: Version: 6, Traffic Class: 0, Flow Label: 418087, Payload Length: 32, Next Header: 6, Hop Limit: 50, Source: 2620:1ec:a92::175, Target: 2600:100f:a005:c23:44eb:22cb:903f:2b80
+2023-09-06 10:42:22,011 - INFO - Ethernet Frame: Destination: 01:00:5e:00:00:fb, Source: fc:12:63:aa:4c:db, Protocol: 2048
+2023-09-06 10:42:22,011 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 255, Protocol: 17, Source: 192.168.0.1, Target: 224.0.0.251
+2023-09-06 10:42:22,015 - INFO - UDP Segment: Source Port: 5353, Destination Port: 5353
+2023-09-06 10:42:22,323 - INFO - Ethernet Frame: Destination: 01:00:5e:00:00:fb, Source: fc:12:63:aa:4c:db, Protocol: 2048
+2023-09-06 10:42:22,323 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 255, Protocol: 17, Source: 192.168.0.1, Target: 224.0.0.251
+2023-09-06 10:42:22,323 - INFO - UDP Segment: Source Port: 5353, Destination Port: 5353
+2023-09-06 10:42:22,327 - INFO - Ethernet Frame: Destination: 01:00:5e:00:00:fb, Source: e4:5f:01:c4:63:0d, Protocol: 2048
+2023-09-06 10:42:22,327 - INFO - IPv4 Packet: Version: 4, Header Length: 5, TTL: 255, Protocol: 17, Source: 192.168.0.15, Target: 224.0.0.251
+2023-09-06 10:42:22,327 - INFO - UDP Segment: Source Port: 5353, Destination Port: 5353
