@@ -4,6 +4,16 @@ from scapy.layers.l2 import Ether, ARP
 from scapy.all import sniff
 import logging
 from logging.handlers import RotatingFileHandler
+import re 
+
+
+def is_uncommon_port(port):
+    # List of common ports
+    common_ports = [
+        20, 21, 22, 23, 25, 53, 80, 110, 143, 443,
+        465, 587, 993, 995, 3389, 5900, 8080
+    ]
+    return port not in common_ports
 
 def configure_logging():
     log_formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
@@ -77,8 +87,26 @@ def process_packet(packet):
         log_arp_packet(packet)
     if packet.haslayer(IPv6):
         log_ipv6_packet(packet)
+    if packet.haslayer(IP):
+        ip_layer = packet.getlayer(IP)
+        src_ip = ip_layer.src
+        dst_ip = ip_layer.dst
+        
+        if packet.haslayer(TCP):
+            tcp_layer = packet.getlayer(TCP)
+            src_port = tcp_layer.sport
+            dst_port = tcp_layer.dport
+            
+            if is_uncommon_port(src_port) or is_uncommon_port(dst_port):
+                print(f"[!] Uncommon Port Detected! Source: {src_ip}:{src_port} -> Destination: {dst_ip}:{dst_port}")
 
-    
+        elif packet.haslayer(UDP):
+            udp_layer = packet.getlayer(UDP)
+            src_port = udp_layer.sport
+            dst_port = udp_layer.dport
+            
+            if is_uncommon_port(src_port) or is_uncommon_port(dst_port):
+                print(f"[!] Uncommon Port Detected! Source: {src_ip}:{src_port} -> Destination: {dst_ip}:{dst_port}")
 
 
 def main():
