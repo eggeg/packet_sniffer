@@ -5,8 +5,18 @@ from scapy.all import sniff
 import logging
 from logging.handlers import RotatingFileHandler
 import re 
+import argparse
 
+"""
+    IS UNCOMMON PORT FUNCTION
+    Determines if the given port is uncommon based on a predefined list of common ports.
+    
+    Parameters:
+    port (int): The port number to be checked.
 
+    Returns:
+    bool: True if the port is not in the list of common ports, False otherwise.
+    """
 def is_uncommon_port(port):
     # List of common ports
     common_ports = [
@@ -15,6 +25,11 @@ def is_uncommon_port(port):
     ]
     return port not in common_ports
 
+"""
+    CONFIGURE LOGGING FUNCTION
+    Configures the logging for the packet sniffer. 
+    Sets up a log handler with a specific format and file rotation policy.
+"""
 def configure_logging():
     log_formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
     
@@ -26,7 +41,13 @@ def configure_logging():
     logging.getLogger().addHandler(log_handler)
     logging.getLogger().setLevel(logging.INFO)
 
+"""
+    LOG ETHERNET FRAME FUNCTION
+    Logs the details of an Ethernet frame from the given packet.
 
+    Parameters:
+    packet (scapy.Packet): The packet containing the Ethernet frame to be logged.
+"""
 def log_ethernet_frame(packet):
     try:
         eth_frame = packet[Ether]
@@ -34,6 +55,13 @@ def log_ethernet_frame(packet):
     except Exception as e:
         logging.error(f'Error processing Ethernet frame: {e}. Packet details: {packet.summary()}')
 
+"""
+    LOG IPv4 PACKET FUNCTION
+    Logs the details of an IPv4 packet.
+
+    Parameters:
+    packet (scapy.Packet): The packet containing the IPv4 packet to be logged.
+"""
 def log_ipv4_packet(packet):
     try:
         ipv4_packet = packet[IP]
@@ -41,13 +69,28 @@ def log_ipv4_packet(packet):
     except Exception as e:
         logging.error(f'Error processing IPv4 packet: {e}. Packet details: {packet.summary()}')
 
+
+"""
+    LOG IPv6 PACKET FUNCTION
+    Logs the details of an IPv6 packet.
+
+    Parameters:
+    packet (scapy.Packet): The packet containing the IPv6 packet to be logged.
+"""
 def log_ipv6_packet(packet):
     try:
         ipv6_packet = packet[IPv6]
         logging.info(f'IPv6 Packet: Version: {ipv6_packet.version}, Traffic Class: {ipv6_packet.tc}, Flow Label: {ipv6_packet.fl}, Payload Length: {ipv6_packet.plen}, Next Header: {ipv6_packet.nh}, Hop Limit: {ipv6_packet.hlim}, Source: {ipv6_packet.src}, Target: {ipv6_packet.dst}')
     except Exception as e:
         logging.error(f'Error processing IPv6 packet: {e}. Packet details: {packet.summary()}')
-    
+
+"""
+    LOG UDP SEGMENT FUNCTION
+    Logs the details of a UDP segment.
+
+    Parameters:
+    packet (scapy.Packet): The packet containing the UDP segment to be logged.
+"""
 def log_udp_segment(packet):
     try:
         udp_segment = packet[UDP]
@@ -55,6 +98,13 @@ def log_udp_segment(packet):
     except Exception as e:
         logging.error(f'Error processing UDP segment: {e}. Packet details: {packet.summary()}')
 
+"""
+    LOG TCP SEGMENT FUNCTION
+    Logs the details of a TCP segment.
+
+    Parameters:
+    packet (scapy.Packet): The packet containing the TCP segment to be logged.
+"""
 def log_tcp_segment(packet):
     try:
         tcp_segment = packet[TCP]
@@ -62,19 +112,42 @@ def log_tcp_segment(packet):
     except Exception as e:
         logging.error(f'Error processing TCP segment: {e}. Packet details: {packet.summary()}')
 
+"""
+    LOG ICMP PACKET FUNCTION
+    Logs the details of an ICMP packet.
+
+    Parameters:
+    packet (scapy.Packet): The packet containing the ICMP packet to be logged.
+"""
 def log_icmp_packet(packet):
     try:
         icmp_segment = packet[ICMP]
         logging.info(f'ICMP Segment: Source Port: {icmp_segment.sport}, Destination Port: {icmp_segment.dport}')
     except Exception as e:
         logging.error(f'Error processing ICMP segment: {e}. Packet details: {packet.summary()}')
+        
+"""
+    LOG ARP PACKET FUNCTION
+    Logs the details of an ARP packet.
+
+    Parameters:
+    packet (scapy.Packet): The packet containing the ARP packet to be logged.
+"""
 def log_arp_packet(packet):
     try:
         arp_packet = packet[ARP]
         logging.info(f'ARP Packet: Hardware Type: {arp_packet.hwtype}, Protocol Type: {arp_packet.ptype}, Operation: {arp_packet.op}, Sender MAC: {arp_packet.hwsrc}, Sender IP: {arp_packet.psrc}, Target MAC: {arp_packet.hwdst}, Target IP: {arp_packet.pdst}')
     except Exception as e:
         logging.error(f'Error processing ARP packet: {e}. Packet details: {packet.summary()}')
-    
+
+
+"""
+    PROCESS PACKET FUNCTION
+    Processes a packet, logging various layers (Ethernet, IP, TCP, etc.) and detecting uncommon ports.
+
+    Parameters:
+    packet (scapy.Packet): The packet to be processed and logged.
+"""
 def process_packet(packet):
     log_ethernet_frame(packet)
     if packet.haslayer(IP):
@@ -107,13 +180,79 @@ def process_packet(packet):
             
             if is_uncommon_port(src_port) or is_uncommon_port(dst_port):
                 print(f"[!] Uncommon Port Detected! Source: {src_ip}:{src_port} -> Destination: {dst_ip}:{dst_port}")
+                
+# Protocol analysis functions
+def analyze_http(packet):
+    if packet.haslayer(TCP) and (packet[TCP].sport == 80 or packet[TCP].dport == 80):
+        # Analyze HTTP traffic
+        # Example: Check for suspicious User-Agent strings or URL patterns
+        pass  # Implement your analysis logic here
+
+def analyze_ssh(packet):
+    if packet.haslayer(TCP) and (packet[TCP].sport == 22 or packet[TCP].dport == 22):
+        # Analyze SSH traffic
+        # Example: Detect unusual SSH connections or failed authentication attempts
+        pass  # Implement your analysis logic here
+
+def analyze_dns(packet):
+    if packet.haslayer(UDP) and (packet[UDP].sport == 53 or packet[UDP].dport == 53):
+        # Analyze DNS queries and responses
+        # Example: Look for domain name patterns associated with phishing or malware
+        pass  # Implement your analysis logic here
+
+# ... Additional protocol analysis functions ...
+
+# Modify the packet processing function
+def process_packet(packet):
+    # Existing logging and analysis
+    # ...
+
+    # Protocol-specific analysis
+    analyze_http(packet)
+    analyze_ssh(packet)
+    analyze_dns(packet)
+    # ... Call additional protocol analysis functions ...
 
 
+"""
+    Main function of the packet sniffer. It configures logging, sets up packet sniffing with filters,
+    and starts the sniffing process.
+"""
 def main():
     configure_logging()
     logging.basicConfig(filename='sniffer.log', level=logging.INFO)
     logging.info('Packet Sniffer started.')
-    sniff(prn=process_packet)
+    
+    #argument parser
+    parser = argparse.ArgumentParser(description='Packet Sniffer')
+    parser.add_argument('--ip', help="IP address to sniff")
+    parser.add_argument('--port', help="Port to sniff")
+    parser.add_argument('--protocol', help="Protocol to filter (e.g., 'tcp', 'udp')")
+
+    
+    args = parser.parse_args()
+    
+    supported_protocols = ['tcp', 'udp', 'icmp']
+
+    if args.protocol and args.protocol.lower() not in supported_protocols:
+        print(f"Unsupported protocol: {args.protocol}. Supported protocols are: {', '.join(supported_protocols)}")
+        exit(1)
+
+    #build filter string
+    filters = []
+    if args.ip:
+        filters.append(f'(src {args.ip} or dst {args.ip})')
+    if args.port:
+        filters.append(f'(port {args.port})')
+    if args.protocol:
+        filters.append(f'({args.protocol})')
+    
+    filter_str = ' and '.join(filters)
+    logging.info(f'Sniffing with filter: {filter_str}')
+    
+    #start sniffing using filter
+    sniff(filter=filter_str, prn=process_packet)
+    
 
 if __name__ == '__main__':
     main()
